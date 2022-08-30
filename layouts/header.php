@@ -8,11 +8,11 @@ include "array_column.php";
 
 // LIVE Cache file reading
 
-$cached_array = json_decode(file_get_contents('https://' . $_SERVER['SERVER_NAME'] . '/crm/view/b2c_cache.php'));
+//$cached_array = json_decode(file_get_contents('https://' . $_SERVER['SERVER_NAME'] . '/crm/view/b2c_cache.php'));
 
 // LOCAL Cache file readingc
 
-// $cached_array = json_decode(file_get_contents('http://'.$_SERVER['SERVER_NAME'] . '/b2c-theme-1/crm/view/b2c_cache.php'));
+$cached_array = json_decode(file_get_contents('http://'.$_SERVER['SERVER_NAME'] . '/demo7/crm/view/b2c_cache.php'));
 
 
 
@@ -266,19 +266,19 @@ $social = json_decode($cached_array[0]->cms_data[0]->social_media)[0];
                     <div class="col col-12 col-md-6 col-lg-7 col-xl-7">
                         <div class="header-sripe-address">
                             <div class="header-sripe-address-item">
-                                <a href="mailto:test@itwebservices.co" class="text-decoration-none header-address-link">
+                                <a href="mailto:test@itwebservices.com" class="text-decoration-none header-address-link">
                                     <i class="fa-regular fa-envelope"></i>
                                     <span><?= $profile->email_id ?></span>
                                 </a>
                             </div>
                             <div class="header-sripe-address-item">
-                                <a href="#" class="text-decoration-none header-address-link">
+                                <a class="text-white header-address-link">
                                     <i class="fa-solid fa-phone"></i>
                                     <span><?= $profile->contact_no ?></span>
                                 </a>
                             </div>
                             <div class="header-sripe-address-item">
-                                <a href="#" class="text-decoration-none header-address-link">
+                                <a class="text-white header-address-link">
                                     <i class="fa-solid fa-location-dot"></i>
                                     <span><?= $profile->address ?></span>
                                 </a>

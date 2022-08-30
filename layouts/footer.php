@@ -17,13 +17,13 @@
                   </a>
                 </div>
                 <div class="footer-address-item">
-                  <a href="#" class="text-decoration-none">
+                  <a class="text-decoration-none">
                     <span><i class="fa-solid fa-phone"></i></span>
                     <span><?php echo $profile->contact_no; ?></span>
                   </a>
                 </div>
                 <div class="footer-address-item">
-                  <a href="#" class="text-decoration-none">
+                  <a class="text-decoration-none">
                     <span><i class="fa-solid fa-location-dot"></i></span>
                     <span><?php echo $profile->address; ?></span>
                   </a>
@@ -112,23 +112,47 @@
                         </ul>
                     </div>
           <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
-            <ul class="footer-features-list">
-              <h6 class="footer-features-title">features</h6>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">layout</a>
-              </li>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">headers </a>
-              </li>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">foorter</a>
-              </li>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">styleguide</a>
-              </li>
-            </ul>
+            <div class="footer-imp-list">
+            <h6 class="footer-features-title">Important links</h6>
+              <div class="footer-links">
+                <ul class="footer-features-list">
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">About us</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Awards </a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Travel blog</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Refund policy</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Terms of use</a>
+                  </li>
+                </ul> 
+                <ul class="footer-features-list">
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Career</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Gallery </a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Testimonial</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Privacy policy</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a href="#" class="footer-features-link">Cancellation policy</a>
+                  </li>
+                </ul> 
+              </div>
+            </div>   
           </div>
-          <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
+         <!-- <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
             <ul class="footer-features-list">
               <h6 class="footer-features-title">support</h6>
               <li class="footer-features-item">
@@ -147,7 +171,7 @@
                 <a href="#" class="footer-features-link">our partner</a>
               </li>
             </ul>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>

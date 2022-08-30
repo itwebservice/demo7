@@ -138,9 +138,9 @@ $date1 = str_replace('-', '/', $date);
                     <div class="package-item">
                         <div class="package-item-title">
                             <span><i class="fa-solid fa-suitcase"></i></span>
-                            <h3 class="package-title">Packages</h3>
+                            <h3 class="package-title">Bag pack</h3>
                         </div>
-                        <p class="package-discription">Popular Family Tour Packages And Delightful Family Vacation Lorem Ipsum Is A Placeholde</p>
+                        <p class="package-discription">Now it's time to travel your best bestination. Pack your bags and be ready.</p>
                     </div>
                 </div>
                 <div class="col col-12 col-md-12 col-lg-3 col-xl-3">
@@ -148,8 +148,8 @@ $date1 = str_replace('-', '/', $date);
                         <div class="package-img">
                             <img src="images/plane.png" alt="Package_Palne" class="img-fluid">
                         </div>
-                        <h6 class="package-box-title">Travel package</h6>
-                        <a href="#" class="btn package-box-btn">View more <i class="fa-solid fa-right-long"></i></a>
+                        <h6 class="package-box-title">Custom Tours</h6>
+                        <a href="<?= BASE_URL_B2C . 'view/tours/tours-listing.php' ?>" class="btn package-box-btn">View more <i class="fa-solid fa-right-long"></i></a>
                         <span class="package-box-circle"></span>
                     </div>
                 </div>
@@ -158,18 +158,18 @@ $date1 = str_replace('-', '/', $date);
                         <div class="package-img">
                             <img src="images/adventure.png" alt="Package_Palne" class="img-fluid">
                         </div>
-                        <h6 class="package-box-title">Adventure places</h6>
-                        <a href="#" class="btn package-box-btn">View more <i class="fa-solid fa-right-long"></i></a>
+                        <h6 class="package-box-title">Hotel</h6>
+                        <a href="<?= BASE_URL_B2C . 'view/hotel/hotel-listing.php' ?>" class="btn package-box-btn">View more <i class="fa-solid fa-right-long"></i></a>
                         <span class="package-box-circle"></span>
                     </div>
                 </div>
                 <div class="col col-12 col-md-12 col-lg-3 col-xl-3">
                     <div class="package-box trending-package">
                         <div class="package-img">
-                            <img src="images/treding.png" alt="Package_Palne" class="img-fluid">
+                            <img src="images/visa.png" alt="Package_Palne" class="img-fluid">
                         </div>
-                        <h6 class="package-box-title">Trending places</h6>
-                        <a href="#" class="btn package-box-btn">View more <i class="fa-solid fa-right-long"></i></a>
+                        <h6 class="package-box-title">Visa</h6>
+                        <a href="<?= BASE_URL_B2C . 'view/visa/visa-listing.php' ?>" class="btn package-box-btn">View more <i class="fa-solid fa-right-long"></i></a>
                         <span class="package-box-circle"></span>
                     </div>
                 </div>
@@ -192,7 +192,7 @@ $date1 = str_replace('-', '/', $date);
             <div class="fantasy-content">
                 <div class="fantasy-heding text-center">
                     <h6 class="fantasy-subtitle">fantasy</h6>
-                    <h2 class="fantasy-title">Travel <span>Packages</span></h2>
+                    <h2 class="fantasy-title">Popular<span>Packages Tour</span></h2>
                 </div>
                 <div class="row justify-content-around">
 
@@ -263,7 +263,7 @@ $date1 = str_replace('-', '/', $date);
                             <div class="fantasy-card">
                                 <div class="fantasy-img">
                                     <img src="<?= $newUrl1 ?> " alt="" class="img-fluid">
-                                    <span>New</span>
+                                    <span>Trendy</span>
                                     <h5><?= $package_name1 ?></h5>
                                 </div>
                                 <div class="fantasy-card-body">
@@ -324,18 +324,19 @@ $date1 = str_replace('-', '/', $date);
                         <div class="discount-img discount-img2 d-none d-md-block">
                             <img src="images/discount_2.png" alt="Dicount_img" class="img-fluid">
                         </div>
-                        <div class="discount-percenteg d-none d-lg-block">
+                       <!-- <div class="discount-percenteg d-none d-lg-block">
                             <span>12</span>
                             <small>%</small>
                             <h3>Discount</h3>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="discount-plan">
                         <h6 class="discount-plan-style">Get to know us</h6>
-                        <h2 class="discount-plan-title">Plan your trip with travel</h2>
-                        <p class="discount-plane-discription">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore dolore magna aliqua enim ad minim veniam quis nostrud exercitation ulamco</p>
+                        <h2 class="discount-plan-title">Plan Your Trip With us</h2>
+                        <p class="discount-plane-discription">World's leading tour and travels Booking website,Over 30,000 packages worldwide. Book travel packages and enjoy your holidays with
+distinctive experience</p>
                         <div class="discount-plan-checkbox">
                             <p class="discount-plan-checked">
                                 <i class="fa-solid fa-square-check"></i>
@@ -350,7 +351,7 @@ $date1 = str_replace('-', '/', $date);
                                 <span>Top 10 destination adventure trips</span>
                             </p>
                         </div>
-                        <a href="#" class="btn discount-plan-btn">Book Now</a>
+                        <a href="#" class="btn discount-plan-btn">Search Now</a>
                     </div>
                 </div>
             </div>
@@ -364,9 +365,9 @@ $date1 = str_replace('-', '/', $date);
     <div class="destination-content">
         <div class="destination-choose-content">
             <div class="destination-choose">
-                <span class="destination-choose-style">place to go</span>
+                <span class="destination-choose-style">Places of sightseeings</span>
                 <h2 class="destination-choose-title">
-                    Choose your perfect destination and enjoy your travel
+                Choose your perfect sightseeing and enjoy your travel
                 </h2>
                 <a href="#" class="btn discount-plan-btn">View More</a>
             </div>
@@ -444,8 +445,8 @@ $date1 = str_replace('-', '/', $date);
                                 <img src="images/plane.png" alt="Flight_Plan" class="img-fluid">
                             </div>
                             <div class="flights-point-details">
-                                <h4>Flights service</h4>
-                                <p>improve your businessLorem ipsum or <br> lipsum as it is used in laying</p>
+                                <h4>Quality and Services</h4>
+                                <p>our quality and service go hand-in-hand to help achieve the core values</p>
                             </div>
                             <h2 class="flights-point-no">1</h2>
                             <span class="flights-point-dot"></span>
@@ -455,8 +456,8 @@ $date1 = str_replace('-', '/', $date);
                                 <img src="images/support.png" alt="Flight_Plan" class="img-fluid">
                             </div>
                             <div class="flights-point-details">
-                                <h4>24/7 Support</h4>
-                                <p>improve your businessLorem ipsum or <br> lipsum as it is used in laying</p>
+                                <h4>Valuable Support</h4>
+                                <p>Open mind and a caring ear in case of <br> any emergency help needed</p>
                             </div>
                             <h2 class="flights-point-no">2</h2>
                             <span class="flights-point-dot"></span>
@@ -466,8 +467,8 @@ $date1 = str_replace('-', '/', $date);
                                 <img src="images/money.png" alt="Flight_Plan" class="img-fluid">
                             </div>
                             <div class="flights-point-details">
-                                <h4>Save money</h4>
-                                <p>improve your businessLorem ipsum or <br> lipsum as it is used in laying</p>
+                                <h4>Tailor-made Holidays</h4>
+                                <p>Designed with you in mind,our packages <br> can be tailored made completely from scratch</p>
                             </div>
                             <h2 class="flights-point-no">3</h2>
                             <span class="flights-point-dot"></span>
@@ -477,8 +478,8 @@ $date1 = str_replace('-', '/', $date);
                                 <img src="images/Passenger.png" alt="Flight_Plan" class="img-fluid">
                             </div>
                             <div class="flights-point-details">
-                                <h4>Trusted by Clients</h4>
-                                <p>improve your businessLorem ipsum or <br> lipsum as it is used in laying</p>
+                                <h4>Save Time and Effort</h4>
+                                <p>Our experience staff help to save the time. <br> only pay, pack and begin your journey.</p>
                             </div>
                             <h2 class="flights-point-no">4</h2>
                             <span class="flights-point-dot"></span>
@@ -499,23 +500,23 @@ $date1 = str_replace('-', '/', $date);
                 <div class="row">
                     <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
                         <div class="traveler-ruls-point">
-                            <h2 class="traveler-point-title">Our Traveler Says</h2>
+                            <h2 class="traveler-point-title">Why your Should travel?</h2>
                             <ul class="traveler-point-list">
                                 <li class="traveler-point-item">
                                     <i class="fa-solid fa-circle-check"></i>
-                                    <span>The Climate Shift in 2022 Allows Venice to Recover</span>
+                                    <span>Experience New Things Out of Your Comfort Zone</span>
                                 </li>
                                 <li class="traveler-point-item">
                                     <i class="fa-solid fa-circle-check"></i>
-                                    <span>New Must-See Architecture Designs in Europe</span>
+                                    <span>Leaves a Positive Impact on your Health</span>
                                 </li>
                                 <li class="traveler-point-item">
                                     <i class="fa-solid fa-circle-check"></i>
-                                    <span>Lacinia sociis morbi erat ultricies dictumst</span>
+                                    <span>A Great Stress Buster</span>
                                 </li>
                                 <li class="traveler-point-item">
                                     <i class="fa-solid fa-circle-check"></i>
-                                    <span>Lorem non sit vivamus convallis elit mollis</span>
+                                    <span>Rejuvenate Your Energy</span>
                                 </li>
                             </ul>
                         </div>
@@ -536,19 +537,19 @@ $date1 = str_replace('-', '/', $date);
                 <div class="traveler-service-point">
                     <div class="traveler-service">
                         <i class="fa-regular fa-handshake"></i>
-                        <h6>Friendly <br> pricing Lorem </h6>
+                        <h6>Friendly office staff</h6>
                     </div>
                     <div class="traveler-service">
                         <i class="fa-brands fa-bandcamp"></i>
-                        <h6>tourism <br> guidance Lorem </h6>
+                        <h6>Affordable Price guarantee </h6>
                     </div>
                     <div class="traveler-service">
                         <i class="fa-solid fa-suitcase"></i>
-                        <h6>Reliable <br> tourism Lorem </h6>
+                        <h6>10 Years + Experience </h6>
                     </div>
                     <div class="traveler-service">
                         <i class="fa-solid fa-chart-area"></i>
-                        <h6>Ultimate <br> Flexibility Lorem </h6>
+                        <h6>Ultimate Flexibility Destinations </h6>
                     </div>
                 </div>
             </div>
@@ -569,7 +570,7 @@ if (sizeof($package_tour_data) != 0) { ?>
         <div class="container">
             <div class="tourism-content">
                 <div class="fantasy-heding text-center">
-                    <h6 class="fantasy-subtitle">seasonal</h6>
+                    <h6 class="fantasy-subtitle">One roof</h6>
                     <h2 class="fantasy-title">Tourism <span> Packages</span></h2>
                 </div>
                 <div class="tourism-tabs-content">
@@ -1065,7 +1066,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
             <div class="testimonials-content">
                 <div class="testimonials-title-content">
                     <span class="testimonials-style">Testimonails</span>
-                    <h2 class="testimonials-title">Trusted by more than 4k clints are lorem</h2>
+                    <h2 class="testimonials-title">Our Happy Customers views</h2>
                 </div>
                 <div class="testimonials-slider">
                     <?php
@@ -1097,7 +1098,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
 <section class="never-section">
     <div class="never-content">
         <h2 class="never-title text-center">NEVER ENDING JOURNEYS</h2>
-        <p class="never-discription text-center">Lorem ipsum dolor sit amet, pri in persius oporteat, usu ex erat aperiam nusquam. His liber verear <br class="d-none d-lg-block"> ornatus eu. Nobis regione patrioque pri te.</p>
+        <p class="never-discription text-center">Every destination have their own uniqueness. Specially for individuals and gorups. Beaches, mountains, Cities, Snow, rivers. We should visit them.</p>
         <div class="never-country-content">
             <div class="never-country">
 
@@ -1222,8 +1223,8 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                                     </li>
                                 </ul>
                             </div>
-                            <h5 class="experts-body-title">Henry</h5>
-                            <p class="experts-body-discription">right soloution guide</p>
+                            <h5 class="experts-body-title">Gayatri</h5>
+                            <p class="experts-body-discription">Support Engineer</p>
                         </div>
                     </div>
                 </div>
@@ -1252,8 +1253,8 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                                     </li>
                                 </ul>
                             </div>
-                            <h5 class="experts-body-title">Oliver</h5>
-                            <p class="experts-body-discription">saftey travel system</p>
+                            <h5 class="experts-body-title">Shubham</h5>
+                            <p class="experts-body-discription">Front end designer</p>
                         </div>
                     </div>
                 </div>
@@ -1282,8 +1283,8 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                                     </li>
                                 </ul>
                             </div>
-                            <h5 class="experts-body-title">fields</h5>
-                            <p class="experts-body-discription">expert trip planning</p>
+                            <h5 class="experts-body-title">Sonam</h5>
+                            <p class="experts-body-discription">Team Leader</p>
                         </div>
                     </div>
                 </div>
@@ -1312,8 +1313,8 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                                     </li>
                                 </ul>
                             </div>
-                            <h5 class="experts-body-title">Richard</h5>
-                            <p class="experts-body-discription">expert trip planning</p>
+                            <h5 class="experts-body-title">Monika</h5>
+                            <p class="experts-body-discription">Quality analyst</p>
                         </div>
                     </div>
                 </div>
@@ -1330,9 +1331,9 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
             <div class="row">
                 <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="offers-details">
-                        <h2 class="offers-title">Discount <span>20-30% Off</span><br class="d-none d-md-block"> journeys save money</h2>
-                        <p class="offers-discription">Popular Family Tour Packages and Delightful family <br class="d-none d-md-block"> Vacation Lorem ipsum is a placeholde</p>
-                        <a href="#" class="btn discount-plan-btn offers-btn">Book Now</a>
+                        <h2 class="offers-title">Get more <span>Discount </span><br class="d-none d-md-block"> on early bird bookings.</h2>
+                        <p class="offers-discription">Our offer alway on. Make your booking now <br class="d-none d-md-block"> only with 30% advance.</p>
+                        <a href="#" class="btn discount-plan-btn offers-btn">View Offers</a>
                     </div>
                 </div>
                 <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
