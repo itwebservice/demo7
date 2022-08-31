@@ -277,12 +277,6 @@ $social = json_decode($cached_array[0]->cms_data[0]->social_media)[0];
                                     <span><?= $profile->contact_no ?></span>
                                 </a>
                             </div>
-                            <div class="header-sripe-address-item">
-                                <a class="text-white header-address-link">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <span><?= $profile->address ?></span>
-                                </a>
-                            </div>
                         </div>
                     </div>
                     <div class="col col-12 col-md-6 col-lg-5 col-xl-5">
@@ -497,7 +491,7 @@ $social = json_decode($cached_array[0]->cms_data[0]->social_media)[0];
 
                   </li>
                   <li class="header-btn">
-                    <a class="btn header-offer-btn" href="<?= BASE_URL_B2C . 'offers.php' ?>">Offers</a>
+                    <a class="btn header-offer-btn" href="<?= BASE_URL_B2C . 'offers.php' ?>">OFFERS</a>
                   </li>
                 </ul>
 

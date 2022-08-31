@@ -138,7 +138,7 @@ $date1 = str_replace('-', '/', $date);
                     <div class="package-item">
                         <div class="package-item-title">
                             <span><i class="fa-solid fa-suitcase"></i></span>
-                            <h3 class="package-title">Bag pack</h3>
+                            <h3 class="package-title">Bag Pack</h3>
                         </div>
                         <p class="package-discription">Now it's time to travel your best bestination. Pack your bags and be ready.</p>
                     </div>
@@ -191,8 +191,8 @@ $date1 = str_replace('-', '/', $date);
         <div class="container">
             <div class="fantasy-content">
                 <div class="fantasy-heding text-center">
-                    <h6 class="fantasy-subtitle">fantasy</h6>
-                    <h2 class="fantasy-title">Popular<span>Packages Tour</span></h2>
+                    <h6 class="fantasy-subtitle">Fantasy</h6>
+                    <h2 class="fantasy-title">Popular <span> Packages Tour</span></h2>
                 </div>
                 <div class="row justify-content-around">
 
@@ -351,7 +351,7 @@ distinctive experience</p>
                                 <span>Top 10 destination adventure trips</span>
                             </p>
                         </div>
-                        <a href="#" class="btn discount-plan-btn">Search Now</a>
+                        <a href="<?= BASE_URL_B2C . 'contact.php' ?>" class="btn discount-plan-btn">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -369,7 +369,7 @@ distinctive experience</p>
                 <h2 class="destination-choose-title">
                 Choose your perfect sightseeing and enjoy your travel
                 </h2>
-                <a href="#" class="btn discount-plan-btn">View More</a>
+                <a target="_blank" href="<?=BASE_URL_B2C?>view/tours/tours-listing.php" class="btn discount-plan-btn">View More</a>
             </div>
             <div class="destination-slider">
                 <?php
@@ -442,7 +442,7 @@ distinctive experience</p>
 
                         <div class="flights-ruls-point">
                             <div class="flights-ruls-img">
-                                <img src="images/plane.png" alt="Flight_Plan" class="img-fluid">
+                                <img src="images/plane1.png" alt="Flight_Plan" class="img-fluid">
                             </div>
                             <div class="flights-point-details">
                                 <h4>Quality and Services</h4>
@@ -500,7 +500,7 @@ distinctive experience</p>
                 <div class="row">
                     <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
                         <div class="traveler-ruls-point">
-                            <h2 class="traveler-point-title">Why your Should travel?</h2>
+                            <h2 class="traveler-point-title">Why you should travel?</h2>
                             <ul class="traveler-point-list">
                                 <li class="traveler-point-item">
                                     <i class="fa-solid fa-circle-check"></i>
@@ -531,7 +531,7 @@ distinctive experience</p>
             <div class="traveler-join">
                 <div class="traveler-client">
                     <h5 class="traveler-client-title">Why we are the best for our client</h5>
-                    <a href="#" class="btn traveler-client-btn">JOIN NOW</a>
+                    <a href="<?= BASE_URL_B2C . 'about.php' ?>" class="btn traveler-client-btn">Know More</a>
                     <span class="traveler-client-triangle"></span>
                 </div>
                 <div class="traveler-service-point">
@@ -574,13 +574,13 @@ if (sizeof($package_tour_data) != 0) { ?>
                     <h2 class="fantasy-title">Tourism <span> Packages</span></h2>
                 </div>
                 <div class="tourism-tabs-content">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <!--<ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="honeymoon-tab" data-bs-toggle="tab" data-bs-target="#honeymoon" type="button" role="tab" aria-controls="honeymoon" aria-selected="true">
                                 <span class="nav-tabs-icon"><i class="fa-solid fa-plane"></i></span>
                                 All
                         </li>
-                        <li class="nav-item" role="presentation">
+                       <li class="nav-item" role="presentation">
                             <button class="nav-link" id="family-tab" data-bs-toggle="tab" data-bs-target="#family" type="button" role="tab" aria-controls="family" aria-selected="false">
                                 <span class="nav-tabs-icon"><i class="fa-solid fa-building-columns"></i></span>
                                 Family Package</button>
@@ -595,7 +595,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                 <span class="nav-tabs-icon"><i class="fa-solid fa-flag"></i></span>
                                 Team Package</button>
                         </li>
-                    </ul>
+                    </ul>-->
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="honeymoon" role="tabpanel" aria-labelledby="honeymoon-tab">
                             <div class="tourism-card-slider">
@@ -1065,8 +1065,9 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
         <div class="container">
             <div class="testimonials-content">
                 <div class="testimonials-title-content">
-                    <span class="testimonials-style">Testimonails</span>
-                    <h2 class="testimonials-title">Our Happy Customers views</h2>
+                    <span class="testimonials-style">Testimonials</span>
+                    <h2 class="testimonials-title">Our Happy Customers 
+                        Views</h2>
                 </div>
                 <div class="testimonials-slider">
                     <?php
@@ -1074,7 +1075,6 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                         foreach ($customerTestimonials as $testimonial) { ?>
                             <div class="testimonials-item">
                                 <div class="testimonials-discription">
-                                    <span>★★★★★ <small>(18 Reviews)</small></span>
                                     <p><?= substr($testimonial->testm, 0, 200) ?>...</p>
                                 </div>
                                 <!-- substr( $string_n, 0, 7 ) -->
@@ -1106,83 +1106,74 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>Australia</h6>
-                        <small>March 2022</small>
+                        <h6>Andaman And Nicobar Islands</h6>
+                        <small>Asia</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>PERU</h6>
-                        <small>JUN 2022</small>
+                        <h6>Goa</h6>
+                        <small>Asia</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo_1.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>Italy</h6>
-                        <small>May 2022</small>
+                        <h6>Himachal Pradesh</h6>
+                        <small>Asia</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo_2.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>Greece</h6>
-                        <small>March 2022</small>
+                        <h6>Jammu and Kashmir</h6>
+                        <small>Asia</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo_3.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>PERU</h6>
-                        <small>JUN 2022</small>
+                        <h6>Kerala</h6>
+                        <small>Asia</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>PERU</h6>
-                        <small>JUN 2022</small>
+                        <h6>Bangkok</h6>
+                        <small>Aisa</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo_1.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>PERU</h6>
-                        <small>JUN 2022</small>
+                        <h6>Indonesia</h6>
+                        <small>Aisa</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo_2.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>PERU</h6>
-                        <small>JUN 2022</small>
+                        <h6>Maldives</h6>
+                        <small>Aisa</small>
                     </div>
                 </div>
                 <div class="never-contry-travel">
                     <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
                     <img src="images/country_logo_3.png" alt="Country_Logo" class="img-fluid never-country-logo">
                     <div class="never-country-title">
-                        <h6>PERU</h6>
-                        <small>JUN 2022</small>
+                        <h6>Nepal</h6>
+                        <small>Aisa</small>
                     </div>
                 </div>
-                <div class="never-contry-travel">
-                    <img src="images/never_location.png" alt="Location" class="img-fluid never-location-icon">
-                    <img src="images/country_logo.png" alt="Country_Logo" class="img-fluid never-country-logo">
-                    <div class="never-country-title">
-                        <h6>PERU</h6>
-                        <small>JUN 2022</small>
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -1204,25 +1195,6 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <img src="images/exp_1.jpg" alt="Experts" class="img-fluid w-100 h-100">
                         </div>
                         <div class="experts-card-body">
-                            <div class="experts-body-social">
-                                <ul class="experts-social-list">
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-pinterest-p"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <h5 class="experts-body-title">Gayatri</h5>
                             <p class="experts-body-discription">Support Engineer</p>
                         </div>
@@ -1234,25 +1206,6 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <img src="images/exp_2.jpg" alt="Experts" class="img-fluid w-100 h-100">
                         </div>
                         <div class="experts-card-body">
-                            <div class="experts-body-social">
-                                <ul class="experts-social-list">
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-pinterest-p"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <h5 class="experts-body-title">Shubham</h5>
                             <p class="experts-body-discription">Front end designer</p>
                         </div>
@@ -1264,25 +1217,6 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <img src="images/exp_3.jpg" alt="Experts" class="img-fluid w-100 h-100">
                         </div>
                         <div class="experts-card-body">
-                            <div class="experts-body-social">
-                                <ul class="experts-social-list">
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-pinterest-p"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <h5 class="experts-body-title">Sonam</h5>
                             <p class="experts-body-discription">Team Leader</p>
                         </div>
@@ -1294,25 +1228,6 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <img src="images/exp_4.jpg" alt="Experts" class="img-fluid w-100 h-100">
                         </div>
                         <div class="experts-card-body">
-                            <div class="experts-body-social">
-                                <ul class="experts-social-list">
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="experts-social-item">
-                                        <a href="#" class="experts-social-link">
-                                            <i class="fa-brands fa-pinterest-p"></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <h5 class="experts-body-title">Monika</h5>
                             <p class="experts-body-discription">Quality analyst</p>
                         </div>
@@ -1332,8 +1247,8 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                 <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="offers-details">
                         <h2 class="offers-title">Get more <span>Discount </span><br class="d-none d-md-block"> on early bird bookings.</h2>
-                        <p class="offers-discription">Our offer alway on. Make your booking now <br class="d-none d-md-block"> only with 30% advance.</p>
-                        <a href="#" class="btn discount-plan-btn offers-btn">View Offers</a>
+                        <p class="offers-discription">Our offer alway on. Make your booking now only with 30% advance.</p>
+                        <a href="offers.php" class="btn discount-plan-btn offers-btn">View Offers</a>
                     </div>
                 </div>
                 <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
@@ -1342,14 +1257,14 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <i class="fa-regular fa-envelope"></i>
                             <h6 class="offers-contact-title">
                                 Send us an email <br>
-                                <span>Contact@loki.com</span>
+                                <span><?php echo $profile->email_id; ?></span>
                             </h6>
                         </div>
                         <div class="offer-contact-email">
                             <i class="fa-solid fa-phone"></i>
                             <h6 class="offers-contact-title">
                                 Give us a call <br>
-                                <span>(120) 801 - 1901</span>
+                                <span><?php echo $profile->contact_no; ?></span>
                             </h6>
                         </div>
                     </div>

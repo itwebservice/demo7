@@ -1138,7 +1138,6 @@
 .package-title {
     font-size: 26px;
     font-weight: 400;
-    font-family: 'Pacifico', cursive;
     line-height: 38px;
     color: #fff;
 }
@@ -1389,19 +1388,18 @@
 
 .fantasy-subtitle {
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 600;
     color: #2b3640;
-    font-family: 'Pacifico', cursive;
-    text-transform: lowercase;
+    font-family: 'Quicksand', sans-serif;
     line-height: 36px;
     margin-bottom: 16px;
 }
 
 .fantasy-title {
-    font-weight: 300;
+    font-weight: 700;
     font-size: 44px;
     color: #2b3640;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
     text-transform: initial;
     padding: 0 0 45px 0;
     display: inline-block;
@@ -1414,9 +1412,9 @@
     background: linear-gradient(to right, rgb(255 155 0), rgb(221 73 121));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 44px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 
 .fantasy-title:before {
@@ -1658,7 +1656,7 @@
     right: -40%;
     z-index: 1;
     width: 0;
-    padding: 100px 40px 105px 80px;
+    padding: 100px 40px 105px 40px;
     visibility: hidden;
     -webkit-transition: all 0.8s ease;
     -o-transition: all 0.8s ease;
@@ -1688,13 +1686,13 @@
 .fantasy-details-title h5 {
     font-weight: 400;
     text-transform: capitalize;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     text-align: left;
     left: -0.6px;
     margin: 0;
     width: 100%;
-    padding: 20px 0 20px 0;
+    padding: 20px 120px 20px 0px;
     position: relative;
 }
 
@@ -1946,12 +1944,11 @@
 }
 
 .discount-plan-style {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
     display: inline-block;
     margin-bottom: 13px;
     color: #055dfd;
-    font-style: italic;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 18px;
     line-height: 26px;
 }
@@ -2105,14 +2102,13 @@
 }
 
 .destination-choose-style {
-    font-size: 18px;
+    font-size: 20px;
     letter-spacing: 1px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
     border-bottom: 2px solid #dcd3d3;
     padding-bottom: 9px;
     position: relative;
-    font-style: italic;
-    font-weight: 100;
+    font-weight: 700;
     color: #000;
 }
 
@@ -2344,20 +2340,18 @@
 
 .flights-style {
     font-size: 25px;
-    font-weight: 300;
+    font-weight: 500;
     color: #2b3640;
-    font-family: 'Pacifico', cursive;
-    text-transform: lowercase;
+    font-family: 'Quicksand', sans-serif;
     line-height: 36px;
     margin-bottom: 16px;
 }
 
 .flights-title {
-    font-weight: 300;
+    font-weight: 800;
     font-size: 44px;
     color: #2b3640;
-    font-family: 'Pacifico', cursive;
-    text-transform: initial;
+    font-family: 'Quicksand', sans-serif;
     margin-bottom: 80px;
     position: relative;
     line-height: 38px;
@@ -2369,9 +2363,9 @@
     background: linear-gradient(to right, rgb(255 155 0), rgb(221 73 121));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: 500;
+    font-weight: 700;
     line-height: 44px;
-    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
     background: -o-linear-gradient(7deg, #00000094, #060608a6);
     background: -webkitlinear-gradient(45deg, #ffef2d, #ff4f4f 80%);
 }
@@ -3204,7 +3198,7 @@
 }
 
 .testimonials-style {
-    font-family: 'Pacifico', cursive;
+    font-family: 'Quicksand', sans-serif;
     font-size: 22px;
     font-weight: 400;
     line-height: 32px;
@@ -3582,6 +3576,7 @@
     top: 90px;
 }
 
+
 @-webkit-keyframes back-po {
     100% {
         -webkit-transform: translateX(-1300px);
@@ -3657,14 +3652,6 @@
     -webkit-transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     -o-transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
     transition: all 0.2s cubic-bezier(0.98, 0.57, 1, 1) 0s;
-}
-
-.experts-card:hover .experts-img img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    transition: all 0.4s ease;
 }
 
 .experts-body-discription {

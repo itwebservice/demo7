@@ -11,7 +11,7 @@
               </a>
               <div class="footer-address-list">
                 <div class="footer-address-item">
-                  <a href="#" class="text-decoration-none">
+                <a href="mailto:test@itwebservices.com" class="text-decoration-none">
                     <span><i class="fa-regular fa-envelope"></i></span>
                     <span><?php echo $profile->email_id; ?></span>
                   </a>
@@ -63,7 +63,7 @@
               </ul>
             </div>
           </div>
-          <div class="col col-12 col-md-6 col-lg-2 col-xl-2">
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-4">
             <ul class="footer-features-list">
               <h6 class="footer-features-title">Destination</h6>
               <?php 
@@ -91,94 +91,57 @@
               <?php } ?>
             </ul>
           </div>
-          <div class="col col-12 col-md-6 col-lg-2 col-xl-2">
-                        <ul class="footer-features-list">
-                            <h6 class="footer-features-title">About Us</h6>
-                            <li class="footer-features-item">
-                                <a href="#" class="footer-features-link">Home</a>
-                            </li>
-                            <li class="footer-features-item">
-                                <a href="#" class="footer-features-link">destination</a>
-                            </li>
-                            <li class="footer-features-item">
-                                <a href="#" class="footer-features-link">packaegs</a>
-                            </li>
-                            <li class="footer-features-item">
-                                <a href="#" class="footer-features-link">hotels</a>
-                            </li>
-                            <li class="footer-features-item">
-                                <a href="#" class="footer-features-link">experts</a>
-                            </li>
-                        </ul>
-                    </div>
-          <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
-            <div class="footer-imp-list">
-            <h6 class="footer-features-title">Important links</h6>
+        <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
+          <div class="footer-imp-list">
+            <h6 class="footer-features-title">Important</h6>
               <div class="footer-links">
                 <ul class="footer-features-list">
                   <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">About us</a>
+                    <a target="_blank" href="<?=BASE_URL_B2C?>about.php" class="footer-features-link">About us</a>
                   </li>
                   <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Awards </a>
+                    <a target="_blank" href="<?=BASE_URL_B2C?>award.php" class="footer-features-link">Awards </a>
                   </li>
                   <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Travel blog</a>
+                    <a target="_blank" href="<?=BASE_URL_B2C?>blog.php" class="footer-features-link">Travel blog</a>
                   </li>
                   <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Refund policy</a>
+                    <a target="_blank" href="<?=BASE_URL_B2C?>refund-policy.php" class="footer-features-link">Refund policy</a>
                   </li>
                   <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Terms of use</a>
-                  </li>
-                </ul> 
-                <ul class="footer-features-list">
-                  <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Career</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Gallery </a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Testimonial</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Privacy policy</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a href="#" class="footer-features-link">Cancellation policy</a>
+                    <a target="_blank" href="<?=BASE_URL_B2C?>terms-conditions.php" class="footer-features-link">Terms of use</a>
                   </li>
                 </ul> 
               </div>
             </div>   
           </div>
-         <!-- <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
-            <ul class="footer-features-list">
-              <h6 class="footer-features-title">support</h6>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">our story</a>
-              </li>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">travel blog tips </a>
-              </li>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">working with us</a>
-              </li>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">packages</a>
-              </li>
-              <li class="footer-features-item">
-                <a href="#" class="footer-features-link">our partner</a>
-              </li>
-            </ul>
-          </div> -->
+            <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
+              <h6 class="footer-features-title"> links</h6>
+                <ul class="footer-features-list">
+                  <li class="footer-features-item">
+                    <a target="_blank" href="<?=BASE_URL_B2C?>careers.php" class="footer-features-link">Career</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a target="_blank" href="<?=BASE_URL_B2C?>gallery.php" class="footer-features-link">Gallery </a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a target="_blank" href="<?=BASE_URL_B2C?>testimonials.php" class="footer-features-link">Testimonial</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a target="_blank" href="<?=BASE_URL_B2C?>privacy-policy.php" class="footer-features-link">Privacy policy</a>
+                  </li>
+                  <li class="footer-features-item">
+                    <a target="_blank" href="<?=BASE_URL_B2C?>cancellation-policy.php" class="footer-features-link">Cancellation policy</a>
+                  </li>
+                </ul> 
+              </div> 
         </div>
       </div>
     </div>
   </footer>
 
   <div class="copyright">
-    <p>© Copyright 2022 <a href="#"> www.itoursthemes.com</a> .All right reserved.</p>
+    <p>© Copyright 2022. <a href="#"> www.itoursthemes.com</a> All right reserved.</p>
   </div>
   <!-- ********** Component :: Footer End ********** -->
 
