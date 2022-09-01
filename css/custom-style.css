@@ -3416,6 +3416,7 @@
     position: relative;
     margin: 0 auto;
     display: table;
+    padding: 0 0 18px 0;
     z-index: 1;
     font-size: 32px;
     font-weight: 600;

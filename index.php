@@ -365,11 +365,11 @@ distinctive experience</p>
     <div class="destination-content">
         <div class="destination-choose-content">
             <div class="destination-choose">
-                <span class="destination-choose-style">Places of sightseeings</span>
+                <span class="destination-choose-style">Places of sightseeing</span>
                 <h2 class="destination-choose-title">
                 Choose your perfect sightseeing and enjoy your travel
                 </h2>
-                <a target="_blank" href="<?=BASE_URL_B2C?>view/tours/tours-listing.php" class="btn discount-plan-btn">View More</a>
+                <a target="_blank" href="<?=BASE_URL_B2C?>view/activities/activities-listing.php" class="btn discount-plan-btn">View More</a>
             </div>
             <div class="destination-slider">
                 <?php
@@ -464,7 +464,7 @@ distinctive experience</p>
                         </div>
                         <div class="flights-ruls-point">
                             <div class="flights-ruls-img">
-                                <img src="images/money.png" alt="Flight_Plan" class="img-fluid">
+                                <img src="images/Passenger.png" alt="Flight_Plan" class="img-fluid">
                             </div>
                             <div class="flights-point-details">
                                 <h4>Tailor-made Holidays</h4>
@@ -475,7 +475,7 @@ distinctive experience</p>
                         </div>
                         <div class="flights-ruls-point">
                             <div class="flights-ruls-img">
-                                <img src="images/Passenger.png" alt="Flight_Plan" class="img-fluid">
+                                <img src="images/money.png" alt="Flight_Plan" class="img-fluid">
                             </div>
                             <div class="flights-point-details">
                                 <h4>Save Time and Effort</h4>
@@ -537,7 +537,7 @@ distinctive experience</p>
                 <div class="traveler-service-point">
                     <div class="traveler-service">
                         <i class="fa-regular fa-handshake"></i>
-                        <h6>Friendly office staff</h6>
+                        <h6>Friendly <br>office staff</h6>
                     </div>
                     <div class="traveler-service">
                         <i class="fa-brands fa-bandcamp"></i>
@@ -545,7 +545,7 @@ distinctive experience</p>
                     </div>
                     <div class="traveler-service">
                         <i class="fa-solid fa-suitcase"></i>
-                        <h6>10 Years + Experience </h6>
+                        <h6>10 Years +<br> Experience </h6>
                     </div>
                     <div class="traveler-service">
                         <i class="fa-solid fa-chart-area"></i>
@@ -1067,7 +1067,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                 <div class="testimonials-title-content">
                     <span class="testimonials-style">Testimonials</span>
                     <h2 class="testimonials-title">Our Happy Customers 
-                        Views</h2>
+                        View</h2>
                 </div>
                 <div class="testimonials-slider">
                     <?php
@@ -1196,7 +1196,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                         </div>
                         <div class="experts-card-body">
                             <h5 class="experts-body-title">Gayatri</h5>
-                            <p class="experts-body-discription">Support Engineer</p>
+                            <p class="experts-body-discription">Travel Expert</p>
                         </div>
                     </div>
                 </div>
@@ -1207,7 +1207,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                         </div>
                         <div class="experts-card-body">
                             <h5 class="experts-body-title">Shubham</h5>
-                            <p class="experts-body-discription">Front end designer</p>
+                            <p class="experts-body-discription">Tour Guide</p>
                         </div>
                     </div>
                 </div>
@@ -1218,7 +1218,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                         </div>
                         <div class="experts-card-body">
                             <h5 class="experts-body-title">Sonam</h5>
-                            <p class="experts-body-discription">Team Leader</p>
+                            <p class="experts-body-discription">Visa Expert</p>
                         </div>
                     </div>
                 </div>
@@ -1229,7 +1229,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                         </div>
                         <div class="experts-card-body">
                             <h5 class="experts-body-title">Monika</h5>
-                            <p class="experts-body-discription">Quality analyst</p>
+                            <p class="experts-body-discription">Destination Expert</p>
                         </div>
                     </div>
                 </div>
@@ -1257,7 +1257,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <i class="fa-regular fa-envelope"></i>
                             <h6 class="offers-contact-title">
                                 Send us an email <br>
-                                <span><?php echo $profile->email_id; ?></span>
+                              <span><a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class="text-decoration-none header-mail-link d-inline ml-2"><?= $cached_array[0]->company_profile_data[0]->email_id ?></a></span>
                             </h6>
                         </div>
                         <div class="offer-contact-email">
