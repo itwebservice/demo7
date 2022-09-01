@@ -11,9 +11,7 @@
               </a>
               <div class="footer-address-list">
                 <div class="footer-address-item">
-                <a href="mailto:test@itwebservices.com" class="text-decoration-none">
-                    <span><i class="fa-regular fa-envelope"></i></span>
-                    <span><?php echo $profile->email_id; ?></span>
+                <a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class="text-decoration-none" style="color: #9f9f9f;"><i class="fa-regular fa-envelope"></i><?= $cached_array[0]->company_profile_data[0]->email_id ?>
                   </a>
                 </div>
                 <div class="footer-address-item">

@@ -1257,7 +1257,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <i class="fa-regular fa-envelope"></i>
                             <h6 class="offers-contact-title">
                                 Send us an email <br>
-                              <span><a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class="text-decoration-none header-mail-link d-inline ml-2"><?= $cached_array[0]->company_profile_data[0]->email_id ?></a></span>
+                              <span><a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class=" text-decoration-none header-mail-link " style="color: #888"><?= $cached_array[0]->company_profile_data[0]->email_id ?></a></span>
                             </h6>
                         </div>
                         <div class="offer-contact-email">

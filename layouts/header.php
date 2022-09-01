@@ -266,9 +266,7 @@ $social = json_decode($cached_array[0]->cms_data[0]->social_media)[0];
                     <div class="col col-12 col-md-6 col-lg-7 col-xl-7">
                         <div class="header-sripe-address">
                             <div class="header-sripe-address-item">
-                                <a href="mailto:test@itwebservices.com" class="text-decoration-none header-address-link">
-                                    <i class="fa-regular fa-envelope"></i>
-                                    <span><?= $profile->email_id ?></span>
+                                <a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class=" text-white text-decoration-none header-address-link"><i class="fa-regular fa-envelope"></i><?= $cached_array[0]->company_profile_data[0]->email_id ?> 
                                 </a>
                             </div>
                             <div class="header-sripe-address-item">
