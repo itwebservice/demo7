@@ -221,11 +221,15 @@ $social = json_decode($cached_array[0]->cms_data[0]->social_media)[0];
 
     <link rel="stylesheet" href="<?php echo BASE_URL_B2C; ?>css/all.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
 
     <!-- COMMON CSS -->
 
     <link id="main-style" rel="stylesheet/less" type="text/css"
-        href="<?php echo BASE_URL_B2C; ?>css/LESS/itours-styles.less" />
+        href="<?php echo BASE_URL_B2C; ?>css/LESS/itours-styles.php" />
 
     <link id="main-custom-style" rel="stylesheet" type="text/css"
         href="<?php echo BASE_URL_B2C; ?>css/custom-style.css" />
