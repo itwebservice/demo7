@@ -2493,7 +2493,7 @@ padding-top: 0;
 }
 
 .pad-top {
-padding-top: 18px;
+padding-top: 30px;
 }
 
 .ts-best-place-enquiry-content {
