@@ -1881,7 +1881,7 @@ align-items: center;
 column-gap: 1rem;
 }
 .ts-social-media-item {
-margin-right: 30px;
+margin-right: 20px;
 }
 
 /***************** Sticky social media *******************/
