@@ -1927,7 +1927,7 @@ background: #ff0000;
 /***************** End Sticky social media *******************/
 
 /***************** Partner slider *******************/
-img{
+.logo-slider img{
 width: 100%;
 }
 
@@ -2493,7 +2493,7 @@ padding-top: 0;
 }
 
 .pad-top {
-padding-top: 30px;
+padding-top: 20px;
 }
 
 .ts-best-place-enquiry-content {
