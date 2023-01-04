@@ -21,51 +21,6 @@ $date1 = str_replace('-', '/', $date);
 
 <!-- Landing Section Start -->
 <section class="landing-sectio">
-    <!-- <div class="container">
-        <div class="home-landing-slider">
-            <div class="home-landing-slide">
-                <div class="landing-contact">
-                    <div class="row">
-                        <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="landing-title-content">
-                                <h2 class="landing-title">Find Your Best
-                                    <img src="images/landing_hart.png" alt="Hart" class="img-fluid"> <br>
-                                    <span>Holiday</span> Package
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="landing-img">
-                                <img src="images/landing_img.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="home-landing-slide">
-                <div class="landing-contact">
-                    <div class="row">
-                        <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="landing-title-content">
-                                <h2 class="landing-title">Find Your Best
-                                    <img src="images/landing_hart.png" alt="Hart" class="img-fluid"> <br>
-                                    <span>Holiday</span> Package
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
-                            <div class="landing-img">
-                                <img src="images/landing_img.png" alt="" class="img-fluid">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="landing-flying-img">
-        <img src="images/perasuit.png" alt="Flying_img" class="img-fluid">
-    </div> -->
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
         <ol class="carousel-indicators">
@@ -150,7 +105,7 @@ $date1 = str_replace('-', '/', $date);
                             <img src="images/plane.png" alt="Package_Palne" class="img-fluid">
                         </div>
                         <h6 class="package-box-title">Custom Tours</h6>
-                        <a href="<?= BASE_URL_B2C . 'view/tours/tours-listing.php' ?>" class="btn package-box-btn">View
+                        <a href="<?= BASE_URL_B2C . 'view/tours/tours-listing.php' ?>" target='_blank' class="btn package-box-btn">View
                             more <i class="fa-solid fa-right-long"></i></a>
                         <span class="package-box-circle"></span>
                     </div>
@@ -161,7 +116,7 @@ $date1 = str_replace('-', '/', $date);
                             <img src="images/adventure.png" alt="Package_Palne" class="img-fluid">
                         </div>
                         <h6 class="package-box-title">Hotel</h6>
-                        <a href="<?= BASE_URL_B2C . 'view/hotel/hotel-listing.php' ?>" class="btn package-box-btn">View
+                        <a href="<?= BASE_URL_B2C . 'view/hotel/hotel-listing.php' ?>" target='_blank' class="btn package-box-btn">View
                             more <i class="fa-solid fa-right-long"></i></a>
                         <span class="package-box-circle"></span>
                     </div>
@@ -172,7 +127,7 @@ $date1 = str_replace('-', '/', $date);
                             <img src="images/visa.png" alt="Package_Palne" class="img-fluid">
                         </div>
                         <h6 class="package-box-title">Visa</h6>
-                        <a href="<?= BASE_URL_B2C . 'view/visa/visa-listing.php' ?>" class="btn package-box-btn">View
+                        <a href="<?= BASE_URL_B2C . 'view/visa/visa-listing.php' ?>" target='_blank' class="btn package-box-btn">View
                             more <i class="fa-solid fa-right-long"></i></a>
                         <span class="package-box-circle"></span>
                     </div>
@@ -247,7 +202,7 @@ $date1 = str_replace('-', '/', $date);
             <div class="fantasy-content">
                 <div class="fantasy-heding text-center">
                     <h6 class="fantasy-subtitle">Fantasy</h6>
-                    <h2 class="fantasy-title">Popular <span> Packages Tour</span></h2>
+                    <h2 class="fantasy-title">Popular <span> Package Tours</span></h2>
                 </div>
                 <div class="row justify-content-around">
 
@@ -324,10 +279,10 @@ $date1 = str_replace('-', '/', $date);
                                 <div class="fantasy-card-body">
                                     <div class="fantasy-details-price">
                                         <del></del>
-                                        <span class="fantasy-details-newprice"><small>$</small> <?= $package_price ?></span>
+                                        <!-- <span class="fantasy-details-newprice"><small>$</small> <?= $package_price ?></span> -->
                                         <span>( <?= $total_nights ?> N/<?= $total_days ?> D )</span>
                                     </div>
-                                    <a href="<?= $file_name ?>" class="btn fantasy-card-btn">View details
+                                    <a href="<?= $file_name ?>" class="btn fantasy-card-btn" target="_blank">View details
                                         <span><i class="fa-solid fa-right-long"></i></span>
                                     </a>
                                 </div>
@@ -407,7 +362,7 @@ $date1 = str_replace('-', '/', $date);
                                 <span>Top 10 destination adventure trips</span>
                             </p>
                         </div>
-                        <a href="<?= BASE_URL_B2C . 'contact.php' ?>" class="btn discount-plan-btn">Contact us</a>
+                        <a href="<?= BASE_URL_B2C . 'contact.php' ?>" target="_blank" class="btn discount-plan-btn">Contact us</a>
                     </div>
                 </div>
             </div>
@@ -415,7 +370,6 @@ $date1 = str_replace('-', '/', $date);
     </div>
 </section>
 <!-- Discoun Section End  -->
-
 <!-- Destination Section Start -->
 <section class="destination-section">
     <div class="destination-content">
@@ -430,7 +384,6 @@ $date1 = str_replace('-', '/', $date);
             <div class="destination-slider">
                 <?php
                 $popularActivities = json_decode($cached_array[0]->cms_data[0]->popular_activities);
-                //var_dump($popularActivities);
                 $activiyData = $cached_array[0]->activity_data;
                 $activitiesAll = array();
                 foreach ($popularActivities as $pAcitivity) {
@@ -441,14 +394,14 @@ $date1 = str_replace('-', '/', $date);
                     }
                 }
 
-
                 foreach ($activitiesAll as $data) {
-                ?>
+                    $img_url = (substr(json_decode($data->images_array)[0]->image_url, 6) != '' ) ? 'crm/'. substr(json_decode($data->images_array)[0]->image_url, 6) : BASE_URL_B2C.'images/activity_default.png';
+                    ?>
 
                     <div class="destination-slider-item">
                         <div class="destination-slider-img">
                             <a href="view/activities/activities-listing.php">
-                                <img src="crm/<?php echo substr(json_decode($data->images_array)[0]->image_url, 6);  ?>" alt="Travel_Place" class="img-fluid">
+                                <img src="<?= $img_url ?>" alt="Travel_Place" class="img-fluid">
                             </a>
                             <h3 class="destination-name"><?php echo $data->activity_name;  ?></h3>
                             <span>
@@ -1484,7 +1437,7 @@ include 'layouts/footer.php';
             minDate: new Date()
         });
 
-        document.getElementById('return_date').readOnly = true;
+        // document.getElementById('return_date').readOnly = true;
 
 
 

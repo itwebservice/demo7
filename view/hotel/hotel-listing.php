@@ -14,14 +14,13 @@ $city_id = ($hotel_array[0]->city_id);
 
 $hotel_id = ($hotel_array[0]->hotel_id);
 
-$check_indate = $hotel_array[0]->check_indate;
+$check_indate = ($hotel_array[0]->check_indate != '') ? $hotel_array[0]->check_indate : date('m/d/Y');
 
-$check_outdate = $hotel_array[0]->check_outdate;
+$check_outdate = ($hotel_array[0]->check_outdate != '') ? $hotel_array[0]->check_outdate : date('m/d/Y');
 
 $star_category_arr = $hotel_array[0]->star_category_arr;
 
 $total_rooms = $hotel_array[0]->total_rooms;
-
 
 
 $check_indate1 = date('d M Y', strtotime($check_indate));
@@ -566,7 +565,7 @@ for ($i_date=$check_in; $i_date<=$check_out; $i_date+=86400) {
 
               }else{
 
-                $newUrl = BASE_URL.'images/dummy-image.jpg';
+                $newUrl = BASE_URL_B2C.'images/hotel_general.png';
 
               }
 

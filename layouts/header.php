@@ -8,11 +8,11 @@ include "array_column.php";
 
 // LIVE Cache file reading
 
-//$cached_array = json_decode(file_get_contents('https://' . $_SERVER['SERVER_NAME'] . '/crm/view/b2c_cache.php'));
+$cached_array = json_decode(file_get_contents('https://' . $_SERVER['SERVER_NAME'] . '/crm/view/b2c_cache.php'));
 
 // LOCAL Cache file readingc
 
-$cached_array = json_decode(file_get_contents('http://' . $_SERVER['SERVER_NAME'] . '/demo7/crm/view/b2c_cache.php'));
+// $cached_array = json_decode(file_get_contents('http://' . $_SERVER['SERVER_NAME'] . '/demo7/crm/view/b2c_cache.php'));
 
 
 
@@ -160,7 +160,6 @@ foreach ($int_dest_id_arr as $int_id) {
 
 // ////////// Header Holiday domestic and internal destinations End //////////////////
 $profile = $cached_array[0]->company_profile_data[0];
-$social = json_decode($cached_array[0]->cms_data[0]->social_media)[0];
 ?>
 
 <!DOCTYPE html>
@@ -304,27 +303,37 @@ $social = json_decode($cached_array[0]->cms_data[0]->social_media)[0];
                                 <div class="header-sripe-social">
                                     <ul class="header-sripe-social-list">
                                         <li class="header-sripe-social-item">
-                                            <a href="<?= $social->fb ?>" class="header-sripe-social-link">
+                                            <a href="<?= $social_media[0]->fb ?>" class="header-sripe-social-link">
                                                 <i class="fa-brands fa-facebook-f"></i>
                                             </a>
                                         </li>
                                         <li class="header-sripe-social-item">
-                                            <a href="<?= $social->tw ?>" class="header-sripe-social-link">
+                                            <a href="<?= $social_media[0]->tw ?>" class="header-sripe-social-link">
                                                 <i class="fa-brands fa-twitter"></i>
                                             </a>
                                         </li>
                                         <li class="header-sripe-social-item">
-                                            <a href="<?= $social->tw ?>" class="header-sripe-social-link">
+                                            <a href="<?= $social_media[0]->yu ?>" class="header-sripe-social-link">
+                                                <i class="fa-brands fa-youtube"></i>
+                                            </a>
+                                        </li>
+                                        <li class="header-sripe-social-item">
+                                            <a href="<?= $social_media[0]->wa ?>" class="header-sripe-social-link">
                                                 <i class="fa-brands fa-whatsapp"></i>
                                             </a>
                                         </li>
                                         <li class="header-sripe-social-item">
-                                            <a href="<?= $social->insta ?>" class="header-sripe-social-link">
+                                            <a href="<?= $social_media[0]->li ?>" class="header-sripe-social-link">
+                                                <i class="fa-brands fa-linkedin"></i>
+                                            </a>
+                                        </li>
+                                        <li class="header-sripe-social-item">
+                                            <a href="<?= $social_media[0]->insta ?>" class="header-sripe-social-link">
                                                 <i class="fa-brands fa-instagram"></i>
                                             </a>
                                         </li>
                                         <li class="header-sripe-social-item">
-                                            <a href="#" class="header-sripe-btn text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal">Login Now
+                                            <a href="https://<?= $_SERVER['SERVER_NAME'] ?>/crm/view/customer/" class="header-sripe-btn text-decoration-none" target="_blank" >Login Now
                                                 <span class="header-btn-arrow"><i class="fa-solid fa-right-long"></i></span>
                                             </a>
                                         </li>
