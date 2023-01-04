@@ -20,7 +20,9 @@ $b2b_agent_code = $_SESSION['b2b_agent_code'];
 
 $activity_array = json_decode($_SESSION['activity_array']);
 
-$checkDate = date('d M Y', strtotime($activity_array[0]->checkDate));
+$checkDate = ($activity_array[0]->checkDate != '') ? $activity_array[0]->checkDate : date('m/d/Y');
+
+$checkDate = date('d M Y', strtotime($checkDate));
 
 $date1 = date("Y-m-d", strtotime($activity_array[0]->checkDate));
 

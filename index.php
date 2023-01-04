@@ -157,17 +157,17 @@ $date1 = str_replace('-', '/', $date);
                 </li>
             </a>
         <?php }
+        if ($social_media[0]->yu != '') { ?>
+            <a target="_blank" href="<?= $social_media[0]->yu ?>">
+                <li class="yt">
+                    <i class="fa-brands fa-youtube"></i>
+                </li>
+            </a>
+        <?php }
         if ($social_media[0]->wa != '') { ?>
             <a target="_blank" href="<?= $social_media[0]->wa ?>">
                 <li class="wapp">
                     <i class="fa-brands fa-whatsapp"></i>
-                </li>
-            </a>
-        <?php }
-        if ($social_media[0]->inst != '') { ?>
-            <a target="_blank" href="<?= $social_media[0]->inst ?>">
-                <li class="insta">
-                    <i class="fa-brands fa-instagram"></i>
                 </li>
             </a>
         <?php }
@@ -177,11 +177,11 @@ $date1 = str_replace('-', '/', $date);
                     <i class="fa-brands fa-linkedin"></i>
                 </li>
             </a>
-        <?php }
-        if ($social_media[0]->yu != '') { ?>
-            <a target="_blank" href="<?= $social_media[0]->yu ?>">
-                <li class="yt">
-                    <i class="fa-brands fa-youtube"></i>
+        <?php } 
+        if ($social_media[0]->inst != '') { ?>
+            <a target="_blank" href="<?= $social_media[0]->inst ?>">
+                <li class="insta">
+                    <i class="fa-brands fa-instagram"></i>
                 </li>
             </a>
         <?php } ?>
@@ -540,7 +540,7 @@ $date1 = str_replace('-', '/', $date);
             <div class="traveler-join">
                 <div class="traveler-client">
                     <h5 class="traveler-client-title">Why we are the best for our client</h5>
-                    <a href="<?= BASE_URL_B2C . 'about.php' ?>" class="btn traveler-client-btn">Know More</a>
+                    <a href="<?= BASE_URL_B2C . 'about.php' ?>" target="_blank" class="btn traveler-client-btn">Know More</a>
                     <span class="traveler-client-triangle"></span>
                 </div>
                 <div class="traveler-service-point">
@@ -579,7 +579,7 @@ if (sizeof($package_tour_data) != 0) { ?>
         <div class="container">
             <div class="tourism-content">
                 <div class="fantasy-heding text-center">
-                    <h6 class="fantasy-subtitle">One roof</h6>
+                    <h6 class="fantasy-subtitle">One Roof</h6>
                     <h2 class="fantasy-title">Tourism <span> Packages</span></h2>
                 </div>
                 <div class="tourism-tabs-content">
@@ -674,8 +674,8 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#"><span>20% OFF</span></a>
-                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
                                                 <div class="tourism-booking-service">
@@ -693,7 +693,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                 </div>
                                                 <div class="tourism-booking-footer">
                                                     <div class="tourism-booking-btn">
-                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn">Book Now</a>
+                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn" target="_blank">Book Now</a>
                                                     </div>
                                                     <div class="tourism-booking-review">
                                                         <span class="tourism-review-rating">4.0</span>
@@ -701,12 +701,12 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                         <span class="fantasy-review-star tourism-review-star">★★★★</span>
                                                     </div>
                                                     <div class="tourism-booking-price">
-                                                        <del class="tourism-old-price">$999999/</del>
-                                                        <h2 class="tourism-new-price">
-                                                            <?php echo  $package_price;
+                                                        <!-- <del class="tourism-old-price">$999999/</del> -->
+                                                        <h2 class="">
+                                                            <?php //echo  $package_price;
                                                             //echo $data->adult_cost; 
                                                             ?>
-                                                            <b><?= $total_nights ?> N, <?= $total_days ?> D</b>
+                                                            <b><?= $total_nights ?> N/ <?= $total_days ?> D</b>
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -787,8 +787,8 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#"><span>20% OFF</span></a>
-                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
                                                 <div class="tourism-booking-service">
@@ -806,7 +806,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                 </div>
                                                 <div class="tourism-booking-footer">
                                                     <div class="tourism-booking-btn">
-                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn">Book Now</a>
+                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn" target="_blank">Book Now</a>
                                                     </div>
                                                     <div class="tourism-booking-review">
                                                         <span class="tourism-review-rating">4.0</span>
@@ -814,12 +814,12 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                         <span class="fantasy-review-star tourism-review-star">★★★★</span>
                                                     </div>
                                                     <div class="tourism-booking-price">
-                                                        <del class="tourism-old-price">$999999/</del>
-                                                        <h2 class="tourism-new-price">
-                                                            <?php echo  $package_price;
+                                                        <!-- <del class="tourism-old-price">$999999/</del> -->
+                                                        <h2 class="">
+                                                            <?php //echo  $package_price;
                                                             //echo $data->adult_cost; 
                                                             ?>
-                                                            <b><?= $total_nights ?> N, <?= $total_days ?> D</b>
+                                                            <b><?= $total_nights ?> N/ <?= $total_days ?> D</b>
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -900,8 +900,8 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#"><span>20% OFF</span></a>
-                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
                                                 <div class="tourism-booking-service">
@@ -919,7 +919,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                 </div>
                                                 <div class="tourism-booking-footer">
                                                     <div class="tourism-booking-btn">
-                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn">Book Now</a>
+                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn" target="_blank">Book Now</a>
                                                     </div>
                                                     <div class="tourism-booking-review">
                                                         <span class="tourism-review-rating">4.0</span>
@@ -927,12 +927,12 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                         <span class="fantasy-review-star tourism-review-star">★★★★</span>
                                                     </div>
                                                     <div class="tourism-booking-price">
-                                                        <del class="tourism-old-price">$999999/</del>
-                                                        <h2 class="tourism-new-price">
-                                                            <?php echo  $package_price;
+                                                        <!-- <del class="tourism-old-price">$999999/</del> -->
+                                                        <h2 class=""> 
+                                                            <?php //echo  $package_price; //tourism-new-price
                                                             //echo $data->adult_cost; 
                                                             ?>
-                                                            <b><?= $total_nights ?> N, <?= $total_days ?> D</b>
+                                                            <b><?= $total_nights ?> N/ <?= $total_days ?> D</b>
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -1013,8 +1013,8 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#"><span>20% OFF</span></a>
-                                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
                                                 <div class="tourism-booking-service">
@@ -1032,7 +1032,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                 </div>
                                                 <div class="tourism-booking-footer">
                                                     <div class="tourism-booking-btn">
-                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn">Book Now</a>
+                                                        <a href="<?= $file_name ?>" class="btn discount-plan-btn" target="_blank">Book Now</a>
                                                     </div>
                                                     <div class="tourism-booking-review">
                                                         <span class="tourism-review-rating">4.0</span>
@@ -1040,12 +1040,12 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                         <span class="fantasy-review-star tourism-review-star">★★★★</span>
                                                     </div>
                                                     <div class="tourism-booking-price">
-                                                        <del class="tourism-old-price">$999999/</del>
-                                                        <h2 class="tourism-new-price">
-                                                            <?php echo  $package_price;
+                                                        <!-- <del class="tourism-old-price">$999999/</del> -->
+                                                        <h2 class="">
+                                                            <?php //echo  $package_price;
                                                             //echo $data->adult_cost; 
                                                             ?>
-                                                            <b><?= $total_nights ?> N, <?= $total_days ?> D</b>
+                                                            <b><?= $total_nights ?> N/ <?= $total_days ?> D</b>
                                                         </h2>
                                                     </div>
                                                 </div>
@@ -1201,7 +1201,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
     <div class="container">
         <div class="experts-content">
             <div class="fantasy-heding text-center">
-                <h6 class="fantasy-subtitle">Meet our</h6>
+                <h6 class="fantasy-subtitle">Meet Our</h6>
                 <h2 class="fantasy-title">Travel <span>Experts</span></h2>
             </div>
             <div class="row">
@@ -1279,9 +1279,9 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
             <div class="row">
                 <div class="col col-12 col-md-12 col-lg-6 col-xl-6">
                     <div class="offers-details">
-                        <h2 class="offers-title">Get more <span>Discount </span><br class="d-none d-md-block"> on early
-                            bird bookings.</h2>
-                        <p class="offers-discription">Our offer alway on. Make your booking now only with 30% advance.
+                        <h2 class="offers-title">Get More <span>Discount </span><br class="d-none d-md-block"> On Early
+                            Bird Bookings.</h2>
+                        <p class="offers-discription">Our offers are always on. Make your booking now only with 30% advance.
                         </p>
                         <a href="offers.php" class="btn discount-plan-btn offers-btn">View Offers</a>
                     </div>
@@ -1291,14 +1291,14 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                         <div class="offer-contact-email">
                             <i class="fa-regular fa-envelope"></i>
                             <h6 class="offers-contact-title">
-                                Send us an email <br>
+                                Send us an Email <br>
                                 <span><a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class=" text-decoration-none header-mail-link " style="color: #888"><?= $cached_array[0]->company_profile_data[0]->email_id ?></a></span>
                             </h6>
                         </div>
                         <div class="offer-contact-email">
                             <i class="fa-solid fa-phone"></i>
                             <h6 class="offers-contact-title">
-                                Give us a call <br>
+                                Give us a Call <br>
                                 <span><?php echo $profile->contact_no; ?></span>
                             </h6>
                         </div>

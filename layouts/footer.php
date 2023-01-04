@@ -80,18 +80,17 @@
                     }
                   }
                 }
-                foreach($footerAll as $fdata)
-                {
-              ?>
-              <li class="footer-features-item">
-                  <a href="#" class="footer-features-link"><?= $fdata->dest_name ?></a>
-                </li>
+                for($i = 0;$i < sizeof($footerAll);$i++){
+                  ?>
+                  <li class="footer-features-item">
+                      <a style="cursor:pointer !important;" target="_blank" onclick="get_tours_data('<?= $covered[$i] ?>','1')" class="footer-features-link"><?= $footerAll[$i]->dest_name ?></a>
+                    </li>
               <?php } ?>
             </ul>
           </div>
         <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
           <div class="footer-imp-list">
-            <h6 class="footer-features-title">Important</h6>
+            <h6 class="footer-features-title">Important links</h6>
               <div class="footer-links">
                 <ul class="footer-features-list">
                   <li class="footer-features-item">
