@@ -1428,12 +1428,16 @@ text-transform: uppercase;
 transition: all ease-in-out 0.3s;
 }
 
-.ts-blog-card-link,
-.ts-blog-card-link:hover {
+.ts-blog-card-link {
 background-color: var(--main-bg-color);
 color: #ffffff;
 text-decoration: none;
 }
+
+.ts-blog-card-link:hover {
+background: #444444 !important;
+}
+
 
 .ts-blog-card-img-link {
 width: 100%;
@@ -1862,7 +1866,7 @@ flex-wrap: wrap;
 }
 
 .footer-links {
-display: flex;
+
 align-items: center;
 column-gap: 1rem;
 }
@@ -2790,6 +2794,10 @@ padding: 12px 40px;
 outline: none;
 text-decoration: none;
 border-radius: 20px;
+}
+
+.header-offer-btn:hover{
+background: #444444 !important;
 }
 
 .header-offer-btn .btn:hover {

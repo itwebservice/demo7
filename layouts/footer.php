@@ -11,7 +11,7 @@
               </a>
               <div class="footer-address-list">
                 <div class="footer-address-item">
-                <a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class="text-decoration-none" style="color: #9f9f9f;"><i class="fa-regular fa-envelope"></i><?= $cached_array[0]->company_profile_data[0]->email_id ?>
+                  <a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class="text-decoration-none" style="color: #9f9f9f;"><i class="fa-regular fa-envelope"></i><?= $cached_array[0]->company_profile_data[0]->email_id ?>
                   </a>
                 </div>
                 <div class="footer-address-item">
@@ -22,7 +22,7 @@
                 </div>
                 <div class="footer-address-item">
                   <a class="text-decoration-none">
-                    <span><i class="fa-solid fa-location-dot"></i></span>
+                    <span style="position: relative; top: -30px;"><i class="fa-solid fa-location-dot"></i></span>
                     <span><?php echo $profile->address; ?></span>
                   </a>
                 </div>
@@ -61,77 +61,77 @@
               </ul>
             </div>
           </div>
-          <div class="col col-12 col-md-6 col-lg-4 col-xl-4">
+          <div class="col col-12 col-md-6 col-lg-4 col-xl-3">
             <ul class="footer-features-list">
               <h6 class="footer-features-title">Destination</h6>
-              <?php 
+              <?php
               $footerData = json_decode($cached_array[0]->cms_data[0]->footer_holidays);
               $packageData = $cached_array[0]->package_tour_data;
               $footerAll = array();
               $covered = array();
-                foreach($footerData as $data)
-                {
-                  foreach($packageData as $pdata)
-                  {
-                    if($data->package_id == $pdata->package_id && !in_array($pdata->dest_id,$covered))
-                    {
-                      array_push($footerAll,$pdata);
-                      array_push($covered,$pdata->dest_id);
-                    }
+              foreach ($footerData as $data) {
+                foreach ($packageData as $pdata) {
+                  if ($data->package_id == $pdata->package_id && !in_array($pdata->dest_id, $covered)) {
+                    array_push($footerAll, $pdata);
+                    array_push($covered, $pdata->dest_id);
                   }
                 }
-                for($i = 0;$i < sizeof($footerAll);$i++){
-                  ?>
-                  <li class="footer-features-item">
-                      <a style="cursor:pointer !important;" target="_blank" onclick="get_tours_data('<?= $covered[$i] ?>','1')" class="footer-features-link"><?= $footerAll[$i]->dest_name ?></a>
-                    </li>
+              }
+              for ($i = 0; $i < sizeof($footerAll); $i++) {
+              ?>
+                <li class="footer-features-item">
+                  <a style="cursor:pointer !important;" target="_blank" onclick="get_tours_data('<?= $covered[$i] ?>','1')" class="footer-features-link"><?= $footerAll[$i]->dest_name ?></a>
+                </li>
               <?php } ?>
             </ul>
           </div>
-        <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
-          <div class="footer-imp-list">
-            <h6 class="footer-features-title">Important links</h6>
+          <div class="col col-12 col-md-4 col-lg-2 col-xl-5">
+            <div class="footer-imp-list">
+              <h6 class="footer-features-title">Important links</h6>
               <div class="footer-links">
-                <ul class="footer-features-list">
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>about.php" class="footer-features-link">About us</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>award.php" class="footer-features-link">Awards </a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>blog.php" class="footer-features-link">Travel blog</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>refund-policy.php" class="footer-features-link">Refund policy</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>terms-conditions.php" class="footer-features-link">Terms of use</a>
-                  </li>
-                </ul> 
+                <div class="row">
+                  <div class="col-6">
+                    <ul class="footer-features-list">
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>about.php" class="footer-features-link">About us</a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>award.php" class="footer-features-link">Awards </a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>blog.php" class="footer-features-link">Travel blog</a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>refund-policy.php" class="footer-features-link">Refund policy</a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>terms-conditions.php" class="footer-features-link">Terms of use</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-6">
+                    <ul class="footer-features-list">
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>careers.php" class="footer-features-link">Career</a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>gallery.php" class="footer-features-link">Gallery </a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>testimonials.php" class="footer-features-link">Testimonial</a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>privacy-policy.php" class="footer-features-link">Privacy policy</a>
+                      </li>
+                      <li class="footer-features-item">
+                        <a target="_blank" href="<?= BASE_URL_B2C ?>cancellation-policy.php" class="footer-features-link">Cancellation policy</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-            </div>   
+            </div>
           </div>
-            <div class="col col-12 col-md-4 col-lg-2 col-xl-2">
-              <h6 class="footer-features-title"> links</h6>
-                <ul class="footer-features-list">
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>careers.php" class="footer-features-link">Career</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>gallery.php" class="footer-features-link">Gallery </a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>testimonials.php" class="footer-features-link">Testimonial</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>privacy-policy.php" class="footer-features-link">Privacy policy</a>
-                  </li>
-                  <li class="footer-features-item">
-                    <a target="_blank" href="<?=BASE_URL_B2C?>cancellation-policy.php" class="footer-features-link">Cancellation policy</a>
-                  </li>
-                </ul> 
-              </div> 
         </div>
       </div>
     </div>

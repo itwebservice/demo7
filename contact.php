@@ -132,8 +132,7 @@ global $app_contact_no;
 
                         </span>
 
-                        <a <?= $cached_array[0]->company_profile_data[0]->contact_no ?>"
-                            class="ts-contact-info-link"><?= $cached_array[0]->company_profile_data[0]->contact_no ?></a>
+                        <a <?= $cached_array[0]->company_profile_data[0]->contact_no ?>" class="ts-contact-info-link"><?= $cached_array[0]->company_profile_data[0]->contact_no ?></a>
 
                     </li>
 
@@ -145,8 +144,7 @@ global $app_contact_no;
 
                         </span>
 
-                        <a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>"
-                            class="ts-contact-info-link"><?= $cached_array[0]->company_profile_data[0]->email_id ?></a>
+                        <a href="mailto:<?= $cached_array[0]->company_profile_data[0]->email_id ?>" class="ts-contact-info-link"><?= $cached_array[0]->company_profile_data[0]->email_id ?></a>
 
                     </li>
 
@@ -170,109 +168,109 @@ global $app_contact_no;
 
                     if ($social_media[0]->fb != '') { ?>
 
-                    <li class="ts-social-media-item">
+                        <li class="ts-social-media-item">
 
-                        <a target="_blank" href="<?= $social_media[0]->fb ?>" class="ts-social-media-link">
+                            <a target="_blank" href="<?= $social_media[0]->fb ?>" class="ts-social-media-link">
 
-                            <span class="ts-contact-info-icon">
+                                <span class="ts-contact-info-icon">
 
-                                <i class="fa fa-facebook"></i>
+                                    <i class="fa-brands fa-facebook-f"></i>
 
-                            </span>
+                                </span>
 
-                        </a>
+                            </a>
 
-                    </li>
+                        </li>
 
                     <?php }
 
                     if ($social_media[0]->inst != '') { ?>
 
-                    <li class="ts-social-media-item">
+                        <li class="ts-social-media-item">
 
-                        <a target="_blank" href="<?= $social_media[0]->inst ?>" class="ts-social-media-link">
+                            <a target="_blank" href="<?= $social_media[0]->inst ?>" class="ts-social-media-link">
 
-                            <span class="ts-contact-info-icon">
+                                <span class="ts-contact-info-icon">
 
-                                <i class="fa fa-instagram"></i>
+                                    <i class="fa-brands fa-instagram"></i>
 
-                            </span>
+                                </span>
 
-                        </a>
+                            </a>
 
-                    </li>
+                        </li>
 
                     <?php }
 
                     if ($social_media[0]->wa != '') { ?>
 
-                    <li class="ts-social-media-item">
+                        <li class="ts-social-media-item">
 
-                        <a target="_blank" href="<?= $social_media[0]->wa ?>" class="ts-social-media-link">
+                            <a target="_blank" href="<?= $social_media[0]->wa ?>" class="ts-social-media-link">
 
-                            <span class="ts-contact-info-icon">
+                                <span class="ts-contact-info-icon">
 
-                                <i class="fa fa-whatsapp"></i>
+                                    <i class="fa-brands fa-whatsapp"></i>
 
-                            </span>
+                                </span>
 
-                        </a>
+                            </a>
 
-                    </li>
-
-                    <?php }
-
-                        if ($social_media[0]->tw != '') { ?>
-
-                    <li class="ts-social-media-item">
-
-                        <a target="_blank" href="<?= $social_media[0]->tw ?>" class="ts-social-media-link">
-
-                            <span class="ts-contact-info-icon">
-
-                                <i class="fa fa-twitter"></i>
-
-                            </span>
-
-                        </a>
-
-                    </li>
+                        </li>
 
                     <?php }
 
-                        if ($social_media[0]->yu != '') { ?>
+                    if ($social_media[0]->tw != '') { ?>
 
-                    <li class="ts-social-media-item">
+                        <li class="ts-social-media-item">
 
-                        <a target="_blank" href="<?= $social_media[0]->yu ?>" class="ts-social-media-link">
+                            <a target="_blank" href="<?= $social_media[0]->tw ?>" class="ts-social-media-link">
 
-                            <span class="ts-contact-info-icon">
+                                <span class="ts-contact-info-icon">
 
-                                <i class="fa fa-youtube"></i>
+                                    <i class="fa-brands fa-twitter"></i>
 
-                            </span>
+                                </span>
 
-                        </a>
+                            </a>
 
-                    </li>
+                        </li>
 
                     <?php }
 
-                        if ($social_media[0]->li != '') { ?>
+                    if ($social_media[0]->yu != '') { ?>
 
-                    <li class="ts-social-media-item">
+                        <li class="ts-social-media-item">
 
-                        <a target="_blank" href="<?= $social_media[0]->li ?>" class="ts-social-media-link">
+                            <a target="_blank" href="<?= $social_media[0]->yu ?>" class="ts-social-media-link">
 
-                            <span class="ts-contact-info-icon">
+                                <span class="ts-contact-info-icon">
 
-                                <i class="fa fa-linkedin"></i>
+                                    <i class="fa-brands fa-youtube"></i>
 
-                            </span>
+                                </span>
 
-                        </a>
+                            </a>
 
-                    </li>
+                        </li>
+
+                    <?php }
+
+                    if ($social_media[0]->li != '') { ?>
+
+                        <li class="ts-social-media-item">
+
+                            <a target="_blank" href="<?= $social_media[0]->li ?>" class="ts-social-media-link">
+
+                                <span class="ts-contact-info-icon">
+
+                                    <i class="fa-brands fa-linkedin"></i>
+
+                                </span>
+
+                            </a>
+
+                        </li>
 
                     <?php } ?>
 
@@ -292,8 +290,7 @@ global $app_contact_no;
 
                                 <label for="inputName">Name *</label>
 
-                                <input type="text" class="form-control" id="inputName" name="inputName"
-                                    placeholder="Name" onkeypress="return blockSpecialChar(event)" required>
+                                <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Name" onkeypress="return blockSpecialChar(event)" required>
 
                             </div>
 
@@ -301,8 +298,7 @@ global $app_contact_no;
 
                                 <label for="inputEmail">Email *</label>
 
-                                <input type="email" class="form-control" id="inputEmail1" name="inputEmail1"
-                                    placeholder="Email" required>
+                                <input type="email" class="form-control" id="inputEmail1" name="inputEmail1" placeholder="Email" required>
 
                             </div>
 
@@ -310,8 +306,7 @@ global $app_contact_no;
 
                                 <label for="inputPhone">Phone *</label>
 
-                                <input type="number" class="form-control" id="inputPhone" name="inputPhone"
-                                    placeholder="Phone" required>
+                                <input type="number" class="form-control" id="inputPhone" name="inputPhone" placeholder="Phone" required>
 
                             </div>
 
@@ -349,8 +344,7 @@ global $app_contact_no;
 
                             <label for="InputMessage">Message*</label>
 
-                            <textarea id="inputMessage" name="inputMessage" rows="8" class="form-control"
-                                placeholder="Message" required></textarea>
+                            <textarea id="inputMessage" name="inputMessage" rows="8" class="form-control" placeholder="Message" required></textarea>
 
                         </div>
 
@@ -376,14 +370,13 @@ global $app_contact_no;
 
 <?php
 
-if($cached_array[0]->cms_data[0]->google_map_script!=''){?>
+if ($cached_array[0]->cms_data[0]->google_map_script != '') { ?>
 
-<section class="ts-map-section">
+    <section class="ts-map-section">
 
-    <iframe src="<?= $cached_array[0]->cms_data[0]->google_map_script ?>" width="100%" height="450" style="border:0;"
-        allowfullscreen="" loading="lazy"></iframe>
+        <iframe src="<?= $cached_array[0]->cms_data[0]->google_map_script ?>" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
-</section>
+    </section>
 
 <?php } ?>
 
@@ -392,89 +385,89 @@ if($cached_array[0]->cms_data[0]->google_map_script!=''){?>
 <a href="#" class="scrollup">Scroll</a>
 
 <script>
-// Example starter JavaScript for disabling form submissions if there are invalid fields
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
 
-(function() {
+    (function() {
 
-    'use strict';
+        'use strict';
 
-    window.addEventListener('load', function() {
+        window.addEventListener('load', function() {
 
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
 
-        var forms = document.getElementsByClassName('needs-validation');
+            var forms = document.getElementsByClassName('needs-validation');
 
-        // Loop over them and prevent submission
+            // Loop over them and prevent submission
 
-        var validation = Array.prototype.filter.call(forms, function(form) {
+            var validation = Array.prototype.filter.call(forms, function(form) {
 
-            form.addEventListener('submit', function(event) {
+                form.addEventListener('submit', function(event) {
 
-                if (form.checkValidity() === false) {
+                    if (form.checkValidity() === false) {
 
-                    event.preventDefault();
+                        event.preventDefault();
 
-                    event.stopPropagation();
+                        event.stopPropagation();
 
-                }
+                    }
 
-                form.classList.add('was-validated');
+                    form.classList.add('was-validated');
 
-            }, false);
+                }, false);
 
-        });
+            });
 
-    }, false);
+        }, false);
 
-})();
+    })();
 </script>
 
 
 
-<?php include 'layouts/footer.php';?>
+<?php include 'layouts/footer.php'; ?>
 
 <script type="text/javascript" src="js/scripts.js"></script>
 
 <script>
-$(document).ready(function() {
+    $(document).ready(function() {
 
 
 
-    var service = '<?php echo $service; ?>';
+        var service = '<?php echo $service; ?>';
 
-    if (service && (service !== '' || service !== undefined)) {
+        if (service && (service !== '' || service !== undefined)) {
 
-        var checkLink = $('.c-searchContainer .c-search-tabs li');
+            var checkLink = $('.c-searchContainer .c-search-tabs li');
 
-        var checkTab = $('.c-searchContainer .search-tab-content .tab-pane');
+            var checkTab = $('.c-searchContainer .search-tab-content .tab-pane');
 
-        checkLink.each(function() {
+            checkLink.each(function() {
 
-            var child = $(this).children('.nav-link');
+                var child = $(this).children('.nav-link');
 
-            if (child.data('service') === service) {
+                if (child.data('service') === service) {
 
-                $(this).siblings().children('.nav-link').removeClass('active');
+                    $(this).siblings().children('.nav-link').removeClass('active');
 
-                child.addClass('active');
+                    child.addClass('active');
 
-            }
+                }
 
-        });
+            });
 
-        checkTab.each(function() {
+            checkTab.each(function() {
 
-            if ($(this).data('service') === service) {
+                if ($(this).data('service') === service) {
 
-                $(this).addClass('active show').siblings().removeClass('active show');
+                    $(this).addClass('active show').siblings().removeClass('active show');
 
-            }
+                }
 
-        })
+            })
 
-    }
+        }
 
 
 
-});
+    });
 </script>

@@ -177,7 +177,7 @@ $date1 = str_replace('-', '/', $date);
                     <i class="fa-brands fa-linkedin"></i>
                 </li>
             </a>
-        <?php } 
+        <?php }
         if ($social_media[0]->inst != '') { ?>
             <a target="_blank" href="<?= $social_media[0]->inst ?>">
                 <li class="insta">
@@ -395,8 +395,8 @@ $date1 = str_replace('-', '/', $date);
                 }
 
                 foreach ($activitiesAll as $data) {
-                    $img_url = (substr(json_decode($data->images_array)[0]->image_url, 6) != '' ) ? 'crm/'. substr(json_decode($data->images_array)[0]->image_url, 6) : BASE_URL_B2C.'images/activity_default.png';
-                    ?>
+                    $img_url = (substr(json_decode($data->images_array)[0]->image_url, 6) != '') ? 'crm/' . substr(json_decode($data->images_array)[0]->image_url, 6) : BASE_URL_B2C . 'images/activity_default.png';
+                ?>
 
                     <div class="destination-slider-item">
                         <div class="destination-slider-img">
@@ -928,7 +928,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                                     </div>
                                                     <div class="tourism-booking-price">
                                                         <!-- <del class="tourism-old-price">$999999/</del> -->
-                                                        <h2 class=""> 
+                                                        <h2 class="">
                                                             <?php //echo  $package_price; //tourism-new-price
                                                             //echo $data->adult_cost; 
                                                             ?>
@@ -1211,7 +1211,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <img src="images/exp_1.jpg" alt="Experts" class="img-fluid w-100 h-100">
                         </div>
                         <div class="experts-card-body">
-                            <h5 class="experts-body-title">Gayatri</h5>
+                            <h5 class="experts-body-title">Nikhil</h5>
                             <p class="experts-body-discription">Travel Expert</p>
                         </div>
                     </div>
@@ -1222,7 +1222,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <img src="images/exp_2.jpg" alt="Experts" class="img-fluid w-100 h-100">
                         </div>
                         <div class="experts-card-body">
-                            <h5 class="experts-body-title">Shubham</h5>
+                            <h5 class="experts-body-title">Gayatri</h5>
                             <p class="experts-body-discription">Tour Guide</p>
                         </div>
                     </div>
@@ -1233,7 +1233,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             <img src="images/exp_3.jpg" alt="Experts" class="img-fluid w-100 h-100">
                         </div>
                         <div class="experts-card-body">
-                            <h5 class="experts-body-title">Sonam</h5>
+                            <h5 class="experts-body-title">Shubham</h5>
                             <p class="experts-body-discription">Visa Expert</p>
                         </div>
                     </div>
@@ -1309,6 +1309,10 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
     </div>
 </section>
 <!-- Offers Section End -->
+
+<!-- Scroll up start -->
+<a href="#" class="scrollup">Scroll</a>
+<!-- Scroll up End -->
 
 <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
