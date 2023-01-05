@@ -248,7 +248,7 @@
       //Get selected Currency Dropdown
 
       $.post(base_url + 'view/get_currency_dropdown.php', {
-        currency_id: global_currency
+        currency_id: currency_id
       }, function(data) {
 
         $('#currency_dropdown').html(data);
@@ -262,18 +262,17 @@
         //Set selected currency in php session also
 
         $.post(base_url + 'view/set_currency_session.php', {
-          currency_id: currency_id1
+          currency_id: currency_id
         }, function(data) {
 
         });
-
         if (typeof Storage !== 'undefined') {
 
           if (localStorage) {
 
             localStorage.setItem(
 
-              'global_currency', currency_id1
+              'global_currency', currency_id
 
             );
 
@@ -281,7 +280,7 @@
 
             window.sessionStorage.setItem(
 
-              'global_currency', currency_id1
+              'global_currency', global_currency
 
             );
 
