@@ -313,25 +313,25 @@ $c_amount1 = ($to_currency_rate != 0) ? ($from_currency_rate / $to_currency_rate
 
                     <li class="nav-item">
 
-                        <a class="nav-link" id="pills-travel-tab" data-toggle="pill" href="#pills-travel" role="tab" aria-controls="pills-travel" aria-selected="false">Travel & Stay</a>
+                        <a class="nav-link" id="pills-travel-tab" data-toggle="pill" href="#pills-travel" role="tab" aria-controls="pills-travel" aria-selected="false">TRAVEL & STAY</a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" id="pills-inclusion-tab" data-toggle="pill" href="#pills-inclusion" role="tab" aria-controls="pills-inclusion" aria-selected="false">Inclusion</a>
+                        <a class="nav-link" id="pills-inclusion-tab" data-toggle="pill" href="#pills-inclusion" role="tab" aria-controls="pills-inclusion" aria-selected="false">INCLUSIONS</a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" id="pills-exclusion-tab" data-toggle="pill" href="#pills-exclusion" role="tab" aria-controls="pills-exclusion" aria-selected="false">Exclusion</a>
+                        <a class="nav-link" id="pills-exclusion-tab" data-toggle="pill" href="#pills-exclusion" role="tab" aria-controls="pills-exclusion" aria-selected="false">EXCLUSIONS</a>
 
                     </li>
 
                     <li class="nav-item">
 
-                        <a class="nav-link" id="pills-terms-tab" data-toggle="pill" href="#pills-terms" role="tab" aria-controls="pills-terms" aria-selected="false">Terms & Conditions</a>
+                        <a class="nav-link" id="pills-terms-tab" data-toggle="pill" href="#pills-terms" role="tab" aria-controls="pills-terms" aria-selected="false">TERMS & CONDITIONS</a>
 
                     </li>
 
@@ -730,7 +730,7 @@ $c_amount1 = ($to_currency_rate != 0) ? ($from_currency_rate / $to_currency_rate
                             </div>
 
                             <div class="form-row">
-                                <div class="form-group">
+                                <div class="form-group col-md-12">
 
                                     <textarea id="inputMessagep" name="inputMessagep" rows="8" class="form-control" placeholder="*Your Enquiry" required></textarea>
 

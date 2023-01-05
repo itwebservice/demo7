@@ -42,7 +42,7 @@ $dest_id = $tours_array[0]->dest_id;
 
 $tour_id = $tours_array[0]->tour_id;
 
-
+echo 'tour-id'.$tour_id;
 
 //City Search
 
@@ -56,13 +56,15 @@ if($dest_id!=''){
 
 //Hotel Search
 
-else if($tour_id!=''){
+if($tour_id!=''){
 
     $sq_tour = mysqli_fetch_assoc(mysqlQuery("select package_id, package_name,total_nights,total_days from custom_package_master where package_id='$tour_id' and status!='Inactive'"));
 
     $query = "select * from custom_package_master where package_id='$tour_id' and status!='Inactive'";
 
-}else{
+}
+
+if($dest_id =='' && $tour_id == ''){
   $query = "select * from custom_package_master where status!='Inactive'";
 }
 
