@@ -2337,7 +2337,7 @@
   border: none;
   height: 40px;
   width: 40px;
-  background: #999999de;
+  background: #999999de !important;
   border-radius: 50%;
   opacity: 0.8;
   -webkit-transform: translateY(-50%);
@@ -2345,9 +2345,9 @@
   transform: translateY(-50%);
 }
 
-.slick-arrow:hover {
+/* .slick-arrow:hover {
   background-color: #000;
-}
+} */
 
 /* .slick-prev {
   left: 0;
