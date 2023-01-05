@@ -1283,7 +1283,7 @@ $customerTestimonials = $cached_array[0]->cms_data[4]->customer_testimonials;
                             Bird Bookings.</h2>
                         <p class="offers-discription">Our offers are always on. Make your booking now only with 30% advance.
                         </p>
-                        <a href="offers.php" class="btn discount-plan-btn offers-btn">View Offers</a>
+                        <a href="offers.php" target="_blank" class="btn discount-plan-btn offers-btn">View Offers</a>
                     </div>
                 </div>
                 <div class="col col-12 col-md-12 col-lg-6 col-xl-6">

@@ -718,7 +718,7 @@ style="background-image: url(../images/title-background.jpg); -->
 
                         </div>
 
-                        <button type="submit" id="getInTouch_btn" class="btn btn-primary">SUMIT</button>
+                        <button type="submit" id="getInTouch_btn" class="btn btn-primary">SUBMIT</button>
 
                     </form>
                     <div class="ts-video-content mt-5">

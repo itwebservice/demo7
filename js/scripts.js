@@ -1884,7 +1884,7 @@ $(function () {
         return false;
       }
 
-      $("#getInTouch_btn").button("loading");
+      document.getElementById('getInTouch_btn').textContent = 'Loading';
 
       $.post(
         crm_base_url + "controller/b2c_settings/b2c/contact_form_mail.php",
@@ -1896,7 +1896,7 @@ $(function () {
           package_name: package_name,
         },
         function (result) {
-          $("#getInTouch_btn").button("reset");
+          document.getElementById('getInTouch_btn').textContent = 'SUBMIT';
 
           $("#getInTouch_btn").prop("disabled", false);
 
@@ -1912,7 +1912,7 @@ $(function () {
             $("#inputMessagep").val("");
 
             return false;
-          }, 1000);
+          }, 1300);
 
           return false;
 
