@@ -184,42 +184,6 @@ global $app_contact_no;
 
                     <?php }
 
-                    if ($social_media[0]->inst != '') { ?>
-
-                        <li class="ts-social-media-item">
-
-                            <a target="_blank" href="<?= $social_media[0]->inst ?>" class="ts-social-media-link">
-
-                                <span class="ts-contact-info-icon">
-
-                                    <i class="fa-brands fa-instagram"></i>
-
-                                </span>
-
-                            </a>
-
-                        </li>
-
-                    <?php }
-
-                    if ($social_media[0]->wa != '') { ?>
-
-                        <li class="ts-social-media-item">
-
-                            <a target="_blank" href="<?= $social_media[0]->wa ?>" class="ts-social-media-link">
-
-                                <span class="ts-contact-info-icon">
-
-                                    <i class="fa-brands fa-whatsapp"></i>
-
-                                </span>
-
-                            </a>
-
-                        </li>
-
-                    <?php }
-
                     if ($social_media[0]->tw != '') { ?>
 
                         <li class="ts-social-media-item">
@@ -256,6 +220,24 @@ global $app_contact_no;
 
                     <?php }
 
+                    if ($social_media[0]->wa != '') { ?>
+
+                        <li class="ts-social-media-item">
+
+                            <a target="_blank" href="<?= $social_media[0]->wa ?>" class="ts-social-media-link">
+
+                                <span class="ts-contact-info-icon">
+
+                                    <i class="fa-brands fa-whatsapp"></i>
+
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                    <?php }
+
                     if ($social_media[0]->li != '') { ?>
 
                         <li class="ts-social-media-item">
@@ -265,6 +247,24 @@ global $app_contact_no;
                                 <span class="ts-contact-info-icon">
 
                                     <i class="fa-brands fa-linkedin"></i>
+
+                                </span>
+
+                            </a>
+
+                        </li>
+
+                    <?php }
+
+                    if ($social_media[0]->inst != '') { ?>
+
+                        <li class="ts-social-media-item">
+
+                            <a target="_blank" href="<?= $social_media[0]->inst ?>" class="ts-social-media-link">
+
+                                <span class="ts-contact-info-icon">
+
+                                    <i class="fa-brands fa-instagram"></i>
 
                                 </span>
 

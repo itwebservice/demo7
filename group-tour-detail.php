@@ -712,13 +712,13 @@ style="background-image: url(../images/title-background.jpg); -->
 
                         </div>
 
-                        <div class="form-group">
+                        <div class="form-group col-md-12">
 
                             <textarea id="inputMessagep" name="inputMessagep" rows="8" class="form-control" placeholder="*Your Enquiry" required></textarea>
 
                         </div>
 
-                        <button type="submit" id="getInTouch_btn" class="btn btn-primary">Send Message</button>
+                        <button type="submit" id="getInTouch_btn" class="btn btn-primary">SUMIT</button>
 
                     </form>
                     <div class="ts-video-content mt-5">

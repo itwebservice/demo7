@@ -730,7 +730,7 @@ $c_amount1 = ($to_currency_rate != 0) ? ($from_currency_rate / $to_currency_rate
                             </div>
 
                             <div class="form-row">
-                                <div class="form-group">
+                                <div class="form-group col-md-12">
 
                                     <textarea id="inputMessagep" name="inputMessagep" rows="8" class="form-control" placeholder="*Your Enquiry" required></textarea>
 
