@@ -674,7 +674,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><span>Recommended</span></a>
                                                 <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
@@ -787,7 +787,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><span>Recommended</span></a>
                                                 <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
@@ -900,7 +900,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><span>Recommended</span></a>
                                                 <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
@@ -1013,7 +1013,7 @@ if (sizeof($package_tour_data) != 0) { ?>
                                         <div class="tourism-tabs-body">
                                             <div class="tourism-tabs-img">
                                                 <img src="<?= $newUrl1 ?>" alt="Tourisms" class="img-fluid">
-                                                <a href="#" style="cursor:none !important;"><span>20% OFF</span></a>
+                                                <a href="#" style="cursor:none !important;"><span>Recommended</span></a>
                                                 <a href="#" style="cursor:none !important;"><i class="fa-regular fa-heart"></i></a>
                                             </div>
                                             <div class="tourism-rooms-booking">
