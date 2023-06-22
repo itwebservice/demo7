@@ -6,6 +6,8 @@ include BASE_URL.'model/model.php';
 
 include '../../layouts/header.php';
 
+$_SESSION['page_type'] = 'hotels-list';
+   
 
 
 $hotel_array = json_decode($_SESSION['hotel_array']);
@@ -14,13 +16,14 @@ $city_id = ($hotel_array[0]->city_id);
 
 $hotel_id = ($hotel_array[0]->hotel_id);
 
-$check_indate = ($hotel_array[0]->check_indate != '') ? $hotel_array[0]->check_indate : date('m/d/Y');
+$check_indate = $hotel_array[0]->check_indate;
 
-$check_outdate = ($hotel_array[0]->check_outdate != '') ? $hotel_array[0]->check_outdate : date('m/d/Y');
+$check_outdate = $hotel_array[0]->check_outdate;
 
 $star_category_arr = $hotel_array[0]->star_category_arr;
 
 $total_rooms = $hotel_array[0]->total_rooms;
+
 
 
 $check_indate1 = date('d M Y', strtotime($check_indate));
@@ -565,7 +568,7 @@ for ($i_date=$check_in; $i_date<=$check_out; $i_date+=86400) {
 
               }else{
 
-                $newUrl = BASE_URL_B2C.'images/hotel_general.png';
+                $newUrl = BASE_URL_B2C.'images/hotel_image.png';
 
               }
 

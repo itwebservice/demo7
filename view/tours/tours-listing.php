@@ -21,28 +21,22 @@ $to_currency_rate = $sq_to['currency_rate'];
 $b2b_agent_code = $_SESSION['b2b_agent_code'];
 
 $tours_array = json_decode($_SESSION['tours_array']);
-$tour_date = ($tours_array[0]->tour_date!='') ? $tours_array[0]->tour_date : date('m/d/Y');
-$checkDate = date('d M Y', strtotime($tour_date));
 
-$checkDate1 = date('d-m-Y', strtotime($tour_date));
+$checkDate = date('d M Y', strtotime($tours_array[0]->tour_date));
 
-$date1 = date("Y-m-d", strtotime($tour_date));
+$checkDate1 = date('d-m-Y', strtotime($tours_array[0]->tour_date));
 
-$adult = (intval($tours_array[0]->adult) == 0) ? 1 : intval($tours_array[0]->adult);
-$child_wobed = (intval($tours_array[0]->child_wobed) == 0) ? 0 : intval($tours_array[0]->child_wobed);
-$child_wibed = (intval($tours_array[0]->child_wibed) == 0) ? 0 : intval($tours_array[0]->child_wibed);
-$infant = (intval($tours_array[0]->infant) == 0) ? 0 : intval($tours_array[0]->infant);
-$extra_bed = (intval($tours_array[0]->infant) == 0) ? 0 : intval($tours_array[0]->extra_bed);
+$date1 = date("Y-m-d", strtotime($tours_array[0]->tour_date));
 
-$pax = intval($adult) + intval($child_wobed) + intval($child_wibed) + intval($extra_bed) + intval($infant);
+$pax = intval($tours_array[0]->adult) + intval($tours_array[0]->child_wobed) + intval($tours_array[0]->child_wibed) + intval($tours_array[0]->extra_bed) + intval($tours_array[0]->infant);
 
-$costing_pax = intval($pax) - intval($infant);
+$costing_pax = intval($pax) - intval($tours_array[0]->infant);
 
 $dest_id = $tours_array[0]->dest_id;
 
 $tour_id = $tours_array[0]->tour_id;
 
-echo 'tour-id'.$tour_id;
+
 
 //City Search
 
@@ -62,10 +56,6 @@ if($tour_id!=''){
 
     $query = "select * from custom_package_master where package_id='$tour_id' and status!='Inactive'";
 
-}
-
-if($dest_id =='' && $tour_id == ''){
-  $query = "select * from custom_package_master where status!='Inactive'";
 }
 
 ?>
@@ -154,9 +144,9 @@ if($dest_id =='' && $tour_id == ''){
 
                 <i class="icon it itours-person"></i>
 
-                <?php echo $adult; ?> Adult(s), <?php echo intval($child_wobed) + intval($child_wibed) ; ?> Child(ren), <?php echo $extra_bed; ?> Extra Bed(s), <?php echo $infant; ?> Infant(s)
+                <?php echo $tours_array[0]->adult; ?> Adult(s), <?php echo $tours_array[0]->child_wobed + $tours_array[0]->child_wibed ; ?> Child(ren), <?php echo $tours_array[0]->extra_bed; ?> Extra Bed(s), <?php echo $tours_array[0]->infant; ?> Infant(s)
 
-                <input type="hidden" id="total_passengers" value="<?= $adult.'-'.$child_wobed.'-'.$child_wibed.'-'.$extra_bed.'-'.$infant ?>"/>
+                <input type="hidden" id="total_passengers" value="<?= $tours_array[0]->adult.'-'.$tours_array[0]->child_wobed.'-'.$tours_array[0]->child_wibed.'-'.$tours_array[0]->extra_bed.'-'.$tours_array[0]->infant ?>"/>
 
               </span>
 
@@ -413,7 +403,7 @@ if($dest_id =='' && $tour_id == ''){
 
                             <div class="datepicker-wrap">
 
-                              <input type="text" name="travelDate" class="input-text full-width" placeholder="mm/dd/yy" value="<?= $tour_date ?>" id="travelDate" required/>
+                              <input type="text" name="travelDate" class="input-text full-width" placeholder="mm/dd/yy" value="<?= $tours_array[0]->tour_date ?>" id="travelDate" required/>
 
                             </div>
 
@@ -437,11 +427,11 @@ if($dest_id =='' && $tour_id == ''){
 
                             <select name="tadult" id='tadult' class="full-width" required>
 
-                                <option value='<?= $adult ?>'><?= $adult ?></option>
+                                <option value='<?= $tours_array[0]->adult ?>'><?= $tours_array[0]->adult ?></option>
 
                                 <?php for($m=0;$m<=10;$m++){
 
-                                  if($m != $adult){ ?>
+                                  if($m != $tours_array[0]->adult){ ?>
 
                                     <option value="<?= $m ?>"><?= $m ?></option>
 
@@ -469,11 +459,11 @@ if($dest_id =='' && $tour_id == ''){
 
                             <select name="child_wobed" id='child_wobed' class="full-width">
 
-                                <option value='<?= $child_wobed ?>'><?= $child_wobed ?></option>
+                                <option value='<?= $tours_array[0]->child_wobed ?>'><?= $tours_array[0]->child_wobed ?></option>
 
                                 <?php for($m=0;$m<=10;$m++){
 
-                                  if($m != $child_wobed){ ?>
+                                  if($m != $tours_array[0]->child_wobed){ ?>
 
                                     <option value="<?= $m ?>"><?= $m ?></option>
 
@@ -501,11 +491,11 @@ if($dest_id =='' && $tour_id == ''){
 
                             <select name="child_wibed" id='child_wibed' class="full-width">
 
-                                <option value='<?= $child_wibed ?>'><?= $child_wibed ?></option>
+                                <option value='<?= $tours_array[0]->child_wibed ?>'><?= $tours_array[0]->child_wibed ?></option>
 
                                 <?php for($m=0;$m<=10;$m++){
 
-                                  if($m != $child_wibed){ ?>
+                                  if($m != $tours_array[0]->child_wibed){ ?>
 
                                     <option value="<?= $m ?>"><?= $m ?></option>
 
@@ -533,11 +523,11 @@ if($dest_id =='' && $tour_id == ''){
 
                             <select name="extra_bed" id='extra_bed' class="full-width">
 
-                                <option value='<?= $extra_bed ?>'><?= $extra_bed ?></option>
+                                <option value='<?= $tours_array[0]->extra_bed ?>'><?= $tours_array[0]->extra_bed ?></option>
 
                                 <?php for($m=0;$m<=10;$m++){
 
-                                   if($m != $extra_bed){ ?>
+                                   if($m != $tours_array[0]->extra_bed){ ?>
 
                                     <option value="<?= $m ?>"><?= $m ?></option>
 
@@ -565,11 +555,11 @@ if($dest_id =='' && $tour_id == ''){
 
                             <select name="tinfant" id='tinfant' class="full-width">
 
-                                <option value='<?= $infant ?>'><?= $infant ?></option>
+                                <option value='<?= $tours_array[0]->infant ?>'><?= $tours_array[0]->infant ?></option>
 
                                 <?php for($m=0;$m<=10;$m++){
 
-                                      if($m != $infant){ ?>
+                                      if($m != $tours_array[0]->infant){ ?>
 
                                     <option value="<?= $m ?>"><?= $m ?></option>
 
@@ -669,15 +659,15 @@ if($dest_id =='' && $tour_id == ''){
 
         <?php
 
-        $adult_count = $adult;
+        $adult_count = $tours_array[0]->adult;
 
-        $child_wocount = $child_wobed;
+        $child_wocount = $tours_array[0]->child_wobed;
 
-        $child_wicount = $child_wibed;
+        $child_wicount = $tours_array[0]->child_wibed;
 
         $extra_bed = $tours_array[0]->extra_bed;
 
-        $infant_count = $infant;
+        $infant_count = $tours_array[0]->infant;
 
         $tours_result_array = array();
 
@@ -927,9 +917,13 @@ if($dest_id =='' && $tour_id == ''){
 
             while($row_tariff = mysqli_fetch_assoc($sq_tariff)){
 
-              $total_cost1 = (intval($adult_count)*floatval($row_tariff['cadult'])) + (intval($child_wocount)*floatval($row_tariff['ccwob'])) + (intval($child_wicount)*floatval($row_tariff['ccwb'])) + (intval($extra_bed)*floatval($row_tariff['cextra'])) + (intval($infant_count)*floatval($row_tariff['cinfant']));
+              
+
+              $total_cost1 = ($adult_count*floatval($row_tariff['cadult'])) + ($child_wocount*floatval($row_tariff['ccwob'])) + ($child_wicount*floatval($row_tariff['ccwb'])) + ($extra_bed*floatval($row_tariff['cextra'])) + ($infant_count*floatval($row_tariff['cinfant']));
 
               $org_cost = $total_cost1;
+
+              
 
               $total_cost1 = ceil($total_cost1);
 

@@ -7,7 +7,7 @@ include BASE_URL.'model/model.php';
 include '../../layouts/header.php';
 
 
-
+$_SESSION['page_type'] = 'activities';
 $currency = $_SESSION['session_currency_id'];
 
 $sq_to = mysqli_fetch_assoc(mysqlQuery("select * from roe_master where currency_id='$currency'"));
@@ -20,9 +20,7 @@ $b2b_agent_code = $_SESSION['b2b_agent_code'];
 
 $activity_array = json_decode($_SESSION['activity_array']);
 
-$checkDate = ($activity_array[0]->checkDate != '') ? $activity_array[0]->checkDate : date('m/d/Y');
-
-$checkDate = date('d M Y', strtotime($checkDate));
+$checkDate = date('d M Y', strtotime($activity_array[0]->checkDate));
 
 $date1 = date("Y-m-d", strtotime($activity_array[0]->checkDate));
 
